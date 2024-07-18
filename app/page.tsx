@@ -1,5 +1,5 @@
 'use client'
-import Curo from "./Components/Curo";
+
 import Footer from  "./Components/Footer";
 import SocialIcons from "./Components/SocialIcons";
 
@@ -29,7 +29,6 @@ const Home = () => {
         </div>
       </div>
      
-        {/* <Curo/> */}
         <SocialIcons/>
 
 
