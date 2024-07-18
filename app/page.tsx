@@ -30,9 +30,7 @@ const Home = () => {
       </div>
      
         <SocialIcons/>
-
-
-    
+        
       <Footer/>
     </>
   );

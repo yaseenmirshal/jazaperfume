@@ -44,11 +44,11 @@ const Navbar = () => {
             <Link href="/About" legacyBehavior >
               <a className="py-4 px-2 text-gray-600 font-semibold hover:text-green-800 transition duration-300" style={{ color: '#3E2723' }}>ABOUT</a>
             </Link>
-            <Link href="/Store" legacyBehavior>
-              <a className="py-4 px-2 text-gray-600 font-semibold hover:text-green-800 transition duration-300" style={{ color: '#3E2723' }}>PRODUCTS</a>
-            </Link>
             <Link href="/Contact" legacyBehavior>
               <a className="py-4 px-2 text-gray-600 font-semibold hover:text-green-800 transition duration-300" style={{ color: '#3E2723' }}>CONTACT</a>
+            </Link>
+            <Link href="/Store" legacyBehavior>
+              <a className="py-4 px-2 text-gray-600 font-semibold hover:text-green-800 transition duration-300" style={{ color: '#3E2723' }}>STORE</a>
             </Link>
             <Link href="/Contact" legacyBehavior>
               <a className="py-4 px-2 text-gray-600 font-semibold hover:text-green-800 transition duration-300" style={{ color: '#3E2723' }}>CATEGORIES</a>
