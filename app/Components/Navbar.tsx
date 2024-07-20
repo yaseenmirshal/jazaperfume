@@ -24,7 +24,7 @@ const Navbar = () => {
   }, [prevScrollPos, visible]);
 
   return (
-    <header  className={`fixed top-0 w-full bg-white shadow-lg transition transform ${
+    <header  className={`fixed top-0 w-full  shadow-lg transition transform ${
       visible ? 'translate-y-0' : '-translate-y-full'
     } duration-300 ease-in-out z-50`}
     style={{ backgroundColor: '#F7F3E9'}}>
