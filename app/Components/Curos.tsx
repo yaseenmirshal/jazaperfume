@@ -51,6 +51,7 @@ const Curos = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          arrows: false,
         },
       },
       {
@@ -58,30 +59,30 @@ const Curos = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
         },
       },
     ],
   };
 
   return (
-    <div className="container mx-auto py-8">
+    <div className="container mx-auto py-8 bg-[#1C1C1C]">
       <Slider {...settings}>
         {perfumes.map((perfume) => (
           <div key={perfume.id} className="p-4">
-            <div className="bg-white rounded-xl shadow-md overflow-hidden">
+            <div className="bg-[#333333] rounded-xl shadow-md overflow-hidden">
               <div
                 style={{ backgroundImage: `url(${perfume.image})` }}
                 className="bg-cover bg-center h-60"
               ></div>
               <div className="p-6">
-                <h5 className="text-xl font-semibold text-gray-900">{perfume.name}</h5>
-                
-                <p className="text-lg text-gray-700">{perfume.price}</p>
-                <div className='flex float-left  w-32 h-5 '>
-                <p className="text-gray-500">{perfume.category}</p>
+                <h5 className="text-xl font-semibold text-richGold">{perfume.name}</h5>
+                <p className="text-lg text-gray-300">{perfume.price}</p>
+                <div className='flex float-left w-32 h-5'>
+                  <p className="text-gray-500">{perfume.category}</p>
                 </div>
-                <div className="-mt-5 flex justify-end ">
-                  <button className="bg-[#14452F] text-white py-2 px-4 rounded-full hover:bg-[#123e29] transition duration-300">
+                <div className="-mt-5 flex justify-end">
+                  <button className="bg-zinc-500 text-[#ffffff] py-2 px-4 rounded-full hover:bg-[#DAA520] hover:text-slate-950 transition duration-300">
                     Shop Now
                   </button>
                 </div>

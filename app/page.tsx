@@ -1,11 +1,13 @@
 'use client'
 
-import Footer from  "./Components/Footer";
+import Footer from "./Components/Footer";
 import SocialIcons from "./Components/SocialIcons";
+import Navbar from "./Components/Navbar";
 
 const Home = () => {
   return (
     <>
+      <Navbar />
       <div className="flex flex-col md:flex-row">
         {/* Left Column */}
         <div
@@ -16,12 +18,12 @@ const Home = () => {
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6 text-[#3E2723]">
               Discover Your <br />Signature Scent
             </h1>
-            <p className="text-lg md:text-2xl leading-relaxed mb-8 text-black">
+            <p className="text-lg md:text-2xl leading-relaxed mb-8 text-[#3E2723]">
               Indulge in our exclusive collection of <br /> captivating fragrances
             </p>
 
             <button
-              className="cursor-pointer font-semibold text-lg md:text-xl py-3 px-6 rounded-lg shadow-lg bg-[#F5F5DC] text-[#8B4513] hover:bg-[#8B4513] hover:text-[#F5F5DC] transition duration-300 ease-in-out"
+              className="cursor-pointer font-semibold text-lg md:text-xl py-2 px-5 rounded-lg shadow-lg bg-[#F5F5DC] text-[#3E2723] hover:bg-[#3E2723] hover:text-[#F5F5DC] transition duration-300 ease-in-out"
             >
               Explore
             </button>
@@ -29,9 +31,8 @@ const Home = () => {
         </div>
       </div>
      
-        <SocialIcons/>
-        
-      <Footer/>
+      <SocialIcons />
+      <Footer />
     </>
   );
 };

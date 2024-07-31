@@ -1,10 +1,8 @@
 'use client'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faHeart, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-import { useEffect } from 'react';
-
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +11,6 @@ const Navbar = () => {
 
   const handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
-
     setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
     setPrevScrollPos(currentScrollPos);
   };
@@ -24,40 +21,48 @@ const Navbar = () => {
   }, [prevScrollPos, visible]);
 
   return (
-    <header  className={`fixed top-0 w-full  shadow-lg transition transform ${
-      visible ? 'translate-y-0' : '-translate-y-full'
-    } duration-300 ease-in-out z-50`}
-    style={{ backgroundColor: '#F7F3E9'}}>
+    <header
+      className={`fixed top-0 w-full shadow-lg transition transform ${
+        visible ? 'translate-y-0' : '-translate-y-full'
+      } duration-500 ease-in-out z-50`}
+      style={{  
+        backgroundColor: 'rgba(51, 51, 51, 0.8)', // Semi-transparent background color
+        backdropFilter: 'blur(10px)', // Blur effect
+        WebkitBackdropFilter: 'blur(10px)', // Safari support
+        borderBottom: '1px solid rgba(255, 255, 255, 0.18)', // Light border to enhance the glass effect
+        boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)' // Subtle shadow for depth
+      }}
+    >
       <div className="mx-auto px-4 max-h-20">
         <div className="flex justify-between items-center max-h-20">
           <div className="flex items-center">
             <Link href="/" legacyBehavior>
               <a className="flex items-center">
-                <img className='max-h-32' src="./jazanewlog-removebg.png" alt="Jaza Perfumes Logo" />
+                <img className='max-h-32' src="./whitelogojaza.png" alt="Jaza Perfumes Logo" />
               </a>
             </Link>
           </div>
           <div className="hidden md:flex justify-center flex-grow space-x-10 max-h-20">
             <Link href="/" legacyBehavior>
-              <a className="py-4 px-2 text-gray-800 border-b-4 border-gray-800 font-semibold" style={{ color: '#3E2723' }}>HOME</a>
+              <a className="py-4 px-2 text-ivory border-b-4 border-ivory font-semibold" style={{ color: '#FFFFF0' }}>HOME</a>
             </Link>
-            <Link href="/About" legacyBehavior >
-              <a className="py-4 px-2 text-gray-600 font-semibold hover:text-green-800 transition duration-300" style={{ color: '#3E2723' }}>ABOUT</a>
+            <Link href="/About" legacyBehavior>
+              <a className="py-4 px-2 text-lightGray font-semibold hover:text-richGold transition duration-300" style={{ color: '#D3D3D3' }}>ABOUT</a>
             </Link>
             <Link href="/Contact" legacyBehavior>
-              <a className="py-4 px-2 text-gray-600 font-semibold hover:text-green-800 transition duration-300" style={{ color: '#3E2723' }}>CONTACT</a>
+              <a className="py-4 px-2 text-lightGray font-semibold hover:text-richGold transition duration-300" style={{ color: '#D3D3D3' }}>CONTACT</a>
             </Link>
             <Link href="/Store" legacyBehavior>
-              <a className="py-4 px-2 text-gray-600 font-semibold hover:text-green-800 transition duration-300" style={{ color: '#3E2723' }}>STORE</a>
+              <a className="py-4 px-2 text-lightGray font-semibold hover:text-richGold transition duration-300" style={{ color: '#D3D3D3' }}>STORE</a>
             </Link>
-            <Link href="/Contact" legacyBehavior>
-              <a className="py-4 px-2 text-gray-600 font-semibold hover:text-green-800 transition duration-300" style={{ color: '#3E2723' }}>CATEGORIES</a>
+            <Link href="/Categories" legacyBehavior>
+              <a className="py-4 px-2 text-lightGray font-semibold hover:text-richGold transition duration-300" style={{ color: '#D3D3D3' }}>CATEGORIES</a>
             </Link>
           </div>
           <div className="hidden md:flex items-center space-x-9 mr-5">
-            <FontAwesomeIcon icon={faHeart} className="text-gray-600 hover:text-orange-950  cursor-pointer" />
-            <FontAwesomeIcon icon={faShoppingCart} className="text-gray-600 hover:text-orange-950 cursor-pointer" />
-            <Link href="/Login"><FontAwesomeIcon icon={faUser} className="text-gray-600 hover:text-green-800 cursor-pointer" /></Link>
+            <FontAwesomeIcon icon={faHeart} className="text-lightGray hover:text-richGold cursor-pointer" />
+            <FontAwesomeIcon icon={faShoppingCart} className="text-lightGray hover:text-richGold cursor-pointer" />
+            <Link href="/Signup"><FontAwesomeIcon icon={faUser} className="text-lightGray hover:text-richGold cursor-pointer" /></Link>
           </div>
 
           <div className="md:hidden flex items-center">
@@ -66,13 +71,13 @@ const Navbar = () => {
               onClick={() => setIsOpen(!isOpen)}
             >
               <svg
-                className="w-6 h-6 text-gray-600 hover:text-green-800"
+                className="w-6 h-6 text-lightGray hover:text-richGold"
                 x-show="!isOpen"
                 fill="none"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                viewBox="0 0 24 24"
+                viewBox="0 0 24 24"                                     
                 stroke="currentColor"
               >
                 <path d="M4 6h16M4 12h16m-7 6h7"></path>
@@ -82,24 +87,24 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className={`md:hidden ${isOpen ? "block" : "hidden"}`} style={{ backgroundColor: '#F7F3E9' }}>
+      <div className={`md:hidden ${isOpen ? "block" : "hidden"}`} style={{ backgroundColor: '#333333' }}>
         <Link href="/" legacyBehavior>
-          <a className="block text-sm px-2 py-4 text-gray-800 font-semibold" style={{ color: '#3E2723' }}>Home</a>
+          <a className="block text-sm px-2 py-4 text-ivory font-semibold" style={{ color: '#FFFFF0' }}>Home</a>
         </Link>
         <Link href="/about" legacyBehavior>
-          <a className="block text-sm px-2 py-4 hover:text-green-800 transition duration-300" style={{ color: '#3E2723' }}>About</a>
+          <a className="block text-sm px-2 py-4 hover:text-richGold transition duration-300" style={{ color: '#D3D3D3' }}>About</a>
         </Link>
         <Link href="/products" legacyBehavior>
-          <a className="block text-sm px-2 py-4 hover:text-green-800 transition duration-300" style={{ color: '#3E2723' }}>Store</a>
+          <a className="block text-sm px-2 py-4 hover:text-richGold transition duration-300" style={{ color: '#D3D3D3' }}>Store</a>
         </Link>
         <Link href="/contact" legacyBehavior>
-          <a className="block text-sm px-2 py-4 hover:text-green-800 transition duration-300" style={{ color: '#3E2723' }}>Contact</a>
+          <a className="block text-sm px-2 py-4 hover:text-richGold transition duration-300" style={{ color: '#D3D3D3' }}>Contact</a>
         </Link>
         <div className="flex items-center justify-around py-4">
-          <FontAwesomeIcon icon={faHeart} className="text-gray-600 hover:text-green-800 cursor-pointer" />
-          <FontAwesomeIcon icon={faShoppingCart} className="text-gray-600 hover:text-green-800 cursor-pointer" />
-          <Link href="/Login">
-           <FontAwesomeIcon icon={faUser} className="text-gray-600 hover:text-green-800 cursor-pointer" /> 
+          <FontAwesomeIcon icon={faHeart} className="text-lightGray hover:text-richGold cursor-pointer" />
+          <FontAwesomeIcon icon={faShoppingCart} className="text-lightGray hover:text-richGold cursor-pointer" />
+          <Link href="/Signup">
+           <FontAwesomeIcon icon={faUser} className="text-lightGray hover:text-richGold cursor-pointer" /> 
             </Link>
         </div>
       </div>
