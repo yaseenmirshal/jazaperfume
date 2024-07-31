@@ -55,7 +55,7 @@ const Navbar = () => {
             <Link href="/Store" legacyBehavior>
               <a className="py-4 px-2 text-lightGray font-semibold hover:text-richGold transition duration-300" style={{ color: '#D3D3D3' }}>STORE</a>
             </Link>
-            <Link href="/Categories" legacyBehavior>
+            <Link href="/" legacyBehavior>
               <a className="py-4 px-2 text-lightGray font-semibold hover:text-richGold transition duration-300" style={{ color: '#D3D3D3' }}>CATEGORIES</a>
             </Link>
           </div>
