@@ -13,6 +13,13 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        // Add your custom fonts here
+        roboto: ['Roboto', 'sans-serif'],
+        creto: ['Creto', 'sans-serif'],
+        playfair: ['"Playfair Display"', 'serif'],
+        // Add more fonts as needed
+      },
     },
   },
   plugins: [],
