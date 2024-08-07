@@ -87,7 +87,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className={`md:hidden ${isOpen ? "block" : "hidden"}`} style={{ backgroundColor: '#333333' }}>
+      <div  className={`md:hidden ${isOpen ? "block" : "hidden"}`} style={{ backgroundColor: '#333333' }}>
         <Link href="/" legacyBehavior>
           <a className="block text-sm px-2 py-4 text-ivory font-semibold" style={{ color: '#FFFFF0' }}>Home</a>
         </Link>
@@ -101,12 +101,13 @@ const Navbar = () => {
           <a className="block text-sm px-2 py-4 hover:text-richGold transition duration-300" style={{ color: '#D3D3D3' }}>Contact</a>
         </Link>
         <div className="flex items-center justify-around py-4">
-          <FontAwesomeIcon icon={faHeart} className="text-lightGray hover:text-richGold cursor-pointer" />
+          <FontAwesomeIcon icon={faHeart} className="text-lightgrey hover:text-richGold cursor-pointer" />
           <FontAwesomeIcon icon={faShoppingCart} className="text-lightGray hover:text-richGold cursor-pointer" />
           <Link href="/Signup">
            <FontAwesomeIcon icon={faUser} className="text-lightGray hover:text-richGold cursor-pointer" /> 
             </Link>
         </div>
+       
       </div>
 
     </header>
