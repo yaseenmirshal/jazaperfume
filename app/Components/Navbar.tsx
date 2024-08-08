@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 w-full shadow-lg transition transform ${
+      className={`fixed top-0 w-full   shadow-lg transition transform ${
         visible ? 'translate-y-0' : '-translate-y-full'
       } duration-500 ease-in-out z-50`}
       style={{  
@@ -38,7 +38,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link href="/" legacyBehavior>
               <a className="flex items-center">
-                <img className='max-h-32' src="./whitelogojaza.png" alt="Jaza Perfumes Logo" />
+                <img className='h-20' src="./whitelogojaza.png" alt="Jaza Perfumes Logo" />
               </a>
             </Link>
           </div>

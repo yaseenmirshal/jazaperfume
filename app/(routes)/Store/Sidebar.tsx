@@ -13,7 +13,7 @@ function Sidebar() {
       };
   return (
     <>
-     <div className="w-[350px] h-screen bg-white overflow-auto">
+     <div className="hidden lg:flex w-[350px] h-screen bg-white overflow-auto">
           <Navbar />
           <div className="p-4 pt-24 h-screen bg-white rounded-lg text-gray-800">
             {/* Filters */}
