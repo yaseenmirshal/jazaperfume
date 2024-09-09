@@ -12,7 +12,7 @@ const Home = () => {
       <div className="flex flex-col md:flex-row">
         {/* Left Column */}
         <div
-          className="hidden md:block w-full h-screen flex items-center justify-start pt-10 px-6 md:px-16 bg-cover bg-center"
+          className="hidden md:block w-full h-screen items-center justify-start pt-10 px-6 md:px-16 bg-cover bg-center"
           style={{ backgroundImage: 'url(./b4full.png)', zIndex: '-1' }}
         >
           <div className="text-left">
