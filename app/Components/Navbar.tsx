@@ -91,13 +91,13 @@ const Navbar = () => {
         <Link href="/" legacyBehavior>
           <a className="block text-sm px-2 py-4 text-ivory font-semibold" style={{ color: '#FFFFF0' }}>Home</a>
         </Link>
-        <Link href="/about" legacyBehavior>
+        <Link href="/About" legacyBehavior>
           <a className="block text-sm px-2 py-4 hover:text-richGold transition duration-300" style={{ color: '#D3D3D3' }}>About</a>
         </Link>
-        <Link href="/products" legacyBehavior>
+        <Link href="/Store" legacyBehavior>
           <a className="block text-sm px-2 py-4 hover:text-richGold transition duration-300" style={{ color: '#D3D3D3' }}>Store</a>
         </Link>
-        <Link href="/contact" legacyBehavior>
+        <Link href="/Contact" legacyBehavior>
           <a className="block text-sm px-2 py-4 hover:text-richGold transition duration-300" style={{ color: '#D3D3D3' }}>Contact</a>
         </Link>
         <div className="flex items-center justify-around py-4">

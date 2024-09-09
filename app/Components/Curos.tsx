@@ -1,8 +1,37 @@
-// PerfumeCarousel.jsx
-import React from 'react';
+'use client'
+import React, { useState,useEffect } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css"; 
+
+const Carostop = () => {
+const images = [
+  "https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp",
+  "https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp",
+  "https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp",
+  "https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp",
+];
+
+const [currentIndex, setCurrentIndex] = useState(0);
+const intervalTime = 3000; // Time in milliseconds
+
+const showSlide = (index:any) => {
+  setCurrentIndex(index);
+};
+
+const nextSlide = () => {
+  setCurrentIndex((currentIndex + 1) % images.length);
+};
+
+const prevSlide = () => {
+  setCurrentIndex((currentIndex - 1 + images.length) % images.length);
+};
+
+useEffect(() => {
+  const interval = setInterval(nextSlide, 3000);
+  return () => clearInterval(interval);
+}, [currentIndex]);
+
 
 const perfumes = [
   {
@@ -36,7 +65,6 @@ const perfumes = [
   // Add more perfume objects as needed
 ];
 
-const Curos = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -66,7 +94,8 @@ const Curos = () => {
   };
 
   return (
-    <div className="container mx-auto py-8 bg-[#1C1C1C]">
+    <>
+    <div className="container mx-auto py-8 bg-slate-100  ">
       <Slider {...settings}>
         {perfumes.map((perfume) => (
           <div key={perfume.id} className="p-4">
@@ -91,8 +120,13 @@ const Curos = () => {
           </div>
         ))}
       </Slider>
+
     </div>
+    </>
   );
 };
 
-export default Curos;
+
+export default Carostop;
+
+

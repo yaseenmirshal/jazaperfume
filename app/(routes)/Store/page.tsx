@@ -2,7 +2,7 @@
 
 import Sidebar from "./Sidebar";
 import Navbar from "@/app/Components/Navbar";
-import { useState } from "react";
+import { useEffect, useState, } from "react";
 import { FaSortAmountDownAlt, FaFilter } from 'react-icons/fa'
 
 function Page() {
@@ -12,19 +12,27 @@ function Page() {
   const [selectedCategory, setSelectedCategory] = useState('FRAGRANCE');
 
 
+
+
   const openModal = (content:any) => {
     setModalContent(content);
     setIsModalOpen(true);
+  
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
+
+
   };
+
+  
+   
+
   const categories = [
     'FRAGRANCE',
     'AVAILABILITY',
     'BRAND NAME',
-    'FRAGRANCE FAMILY',
     'FRAGRANCE NOTES',
     'FRAGRANCE TYPE',
     'GENDER',
@@ -38,7 +46,7 @@ function Page() {
     FRAGRANCE: ["Men's Fragrance (404)", "Women's Fragrance (433)", "Giftsets (116)", "Brands (1145)", "Unisex (142)"],
     AVAILABILITY: ['In Stock', 'Out of Stock'],
     'BRAND NAME': ['Brand A', 'Brand B', 'Brand C'],
-    'FRAGRANCE FAMILY': ['Floral', 'Citrus', 'Woody'],
+   
     'FRAGRANCE NOTES': ['Top Notes', 'Middle Notes', 'Base Notes'],
     'FRAGRANCE TYPE': ['Eau de Parfum', 'Eau de Toilette'],
     GENDER: ['Male', 'Female', 'Unisex'],
@@ -179,6 +187,7 @@ function Page() {
                     src={product.image2}
                     alt="product image"
                   />
+                  
                   <div className="absolute bottom-0 mb-4 flex space-x-4 w-full justify-center">
                     <div className="rounded-full h-3 w-3 bg-gray-300 border-2 border-white"></div>
                     <div className="rounded-full h-3 w-3 bg-gray-300 border-2 border-white"></div>
@@ -249,49 +258,54 @@ function Page() {
         </button>
       </div>
 {/* Modal */}
-{isModalOpen && (
-  <div className="fixed inset-0 flex items-end justify-center z-50">
-    <div className="fixed inset-0 bg-black opacity-50" onClick={closeModal}></div>
-    <div className="bg-white w-full sm:w-96 p-4 rounded-t-lg transform transition-transform duration-300 ease-in-out">
-      <div className="flex justify-between items-center">
-        <h2 className="text-lg text-black font-bold">
-          {modalContent === 'sort' ? 'SORT BY' : 'FILTERS'}
-        </h2>
-        <button onClick={closeModal} className="text-gray-500 hover:text-gray-700">
-          &times;
-        </button>
-      </div>
-      <div className="mt-4 text-black">
-        {modalContent === 'sort' ? (
-          <div>
-            <div className="space-y-2">
-              <button className="w-full text-left py-2 px-4 border border-gray-200 rounded-md bg-black text-white font-medium">
-                Relevance
-              </button>
-              <button className="w-full text-left py-2 px-4 border border-gray-200 rounded-md">
-                Best Seller
-              </button>
-              <button className="w-full text-left py-2 px-4 border border-gray-200 rounded-md">
-                Price: High To Low
-              </button>
-              <button className="w-full text-left py-2 px-4 border border-gray-200 rounded-md">
-                Price: Low To High
-              </button>
-              <button className="w-full text-left py-2 px-4 border border-gray-200 rounded-md">
-                New Arrival
-              </button>
-              <button className="w-full text-left py-2 px-4 border border-gray-200 rounded-md">
-                Featured
-              </button>
-              <button className="w-full text-left py-2 px-4 border border-gray-200 rounded-md">
-                On Sale
-              </button>
-            </div>
+<div className={`fixed inset-0 flex items-end justify-center z-50 transition-opacity ${isModalOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
+  <div className="fixed inset-0 bg-black opacity-50" onClick={closeModal}></div>
+  <div
+    className={`bg-white w-full sm:w-96 p-4 rounded-t-lg transform transition-transform duration-700 ease-in-out ${
+      isModalOpen ? 'translate-y-0' : 'translate-y-full'
+      
+    }`}
+  >
+    <div className="flex justify-between items-center">
+      <h2 className="text-lg text-black font-bold">
+        {modalContent === 'sort' ? 'SORT BY' : 'FILTERS'}
+      </h2>
+      <button onClick={closeModal} className="text-gray-500 hover:text-gray-700">
+        &times;
+      </button>
+    </div>
+    <div className="mt-4 text-black">
+      {modalContent === 'sort' ? (
+        <div>
+          <div className="space-y-2">
+            <button className="w-full text-left py-2 px-4 border border-gray-200 rounded-md bg-black text-white font-medium">
+              Relevance
+            </button>
+            <button className="w-full text-left py-2 px-4 border border-gray-200 rounded-md">
+              Best Seller
+            </button>
+            <button className="w-full text-left py-2 px-4 border border-gray-200 rounded-md">
+              Price: High To Low
+            </button>
+            <button className="w-full text-left py-2 px-4 border border-gray-200 rounded-md">
+              Price: Low To High
+            </button>
+            <button className="w-full text-left py-2 px-4 border border-gray-200 rounded-md">
+              New Arrival
+            </button>
+            <button className="w-full text-left py-2 px-4 border border-gray-200 rounded-md">
+              Featured
+            </button>
+            <button className="w-full text-left py-2 px-4 border border-gray-200 rounded-md">
+              On Sale
+            </button>
           </div>
-        ) : (
-          <div className="flex flex-col sm:flex-row">
-            <div className="flex w-auto text-black sm:w-1/3 border-r border-gray-200">
-              <div className="w-96 h-auto">
+        </div>
+      ) : (
+        <div className="flex flex-col sm:flex-row">
+          <div className="flex w-auto text-black sm:w-1/3 border-r border-gray-200">
+            <div className="flex w-96 float-left h-auto">
+              <div className="w-40 h-auto">
                 <ul className="text-sm">
                   {categories.map((category) => (
                     <li
@@ -306,32 +320,31 @@ function Page() {
                   ))}
                 </ul>
               </div>
-            </div>
-            <div className="text-black text-sm w-full sm:w-2/3 p-4">
-              {categoryDetails[selectedCategory].map((detail:any, index:any) => (
-                <div key={index} className="py-1">
-                  {detail}
-                </div>
-              ))}
+              <div className="text-black text-sm w-60 sm:w-2/3 p-4">
+                {categoryDetails[selectedCategory].map((detail: any, index: any) => (
+                  <div key={index} className="py-1">
+                    {detail}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        )}
-      </div>
-      {modalContent !== 'sort' && (
-        <div className="flex mt-4">
-          <button
-            className="py-2 mr-2 px-4 w-full bg-gray-200 text-gray-800 border-[1px] border-black rounded-md"
-            onClick={closeModal}
-          >
-            CLOSE
-          </button>
-          <button className="py-2 ml-2 px-4 w-full bg-black text-white rounded-md">APPLY</button>
         </div>
       )}
     </div>
+    {modalContent !== 'sort' && (
+      <div className="flex mt-4">
+        <button
+          className="py-2 mr-2 px-4 w-full bg-gray-200 text-gray-800 border-[1px] border-black rounded-md"
+          onClick={closeModal}
+        >
+          CLOSE
+        </button>
+        <button className="py-2 ml-2 px-4 w-full bg-black text-white rounded-md">APPLY</button>
+      </div>
+    )}
   </div>
-)}
-
+</div>
 
       
     </>

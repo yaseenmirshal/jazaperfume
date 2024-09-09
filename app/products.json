@@ -1,0 +1,127 @@
+[
+    {
+      "id": 1,
+      "Category":"ATTAR",
+      "item_code": "JAZA-01",
+      "item_name": "LAVENDER OUD",
+      "quantity": 3,
+      "price": 200
+    },
+    {
+      "id": 2,
+      "Category":"ATTAR",
+      "item_code": "JAZA-01",
+      "item_name": "LAVENDER OUD",
+      "quantity": 6,
+      "price": 350
+    },
+    {
+      "id": 3,
+      "Category":"ATTAR",
+      "item_code": "JAZA-01",
+      "item_name": "LAVENDER OUD",
+      "quantity": 12,
+      "price": 650
+    },
+    {
+      "id": 4,
+      "Category":"ATTAR",
+      "item_code": "JHD-100",
+      "item_name": "PURE HD",
+      "quantity": 3,
+      "price": 300
+    },
+    {
+      "id": 5,
+      "Category":"ATTAR",
+      "item_code": "JHD-100",
+      "item_name": "PURE HD",
+      "quantity": 6,
+      "price": 550
+    },
+    {
+      "id": 6,
+      "Category":"ATTAR",
+      "item_code": "JHD-100",
+      "item_name": "PURE HD",
+      "quantity": 12,
+      "price": 1100
+    },
+    {
+      "id": 7,
+      "Category":"ATTAR",
+      "item_code": "JB-111",
+      "item_name": "YSL KOUROS",
+      "quantity": 3,
+      "price": 150
+    },
+    {
+      "id": 8,
+      "Category":"ATTAR",
+      "item_code": "JCR-07",
+      "item_name": "CR7",
+      "quantity": 3,
+      "price": 150
+    },
+    {
+      "id": 9,
+      "Category":"ATTAR",
+      "item_code": "JW-103",
+      "item_name": "BLACK XS",
+      "quantity": 3,
+      "price": 150
+    },
+    {
+      "id": 10,
+      "item_code": "JX-777",
+      "item_name": "ACTRESS",
+      "quantity": 3,
+      "price": 150
+    },
+    {
+      "id": 11,
+      "Category":"ATTAR",
+      "item_code": "JWO-01",
+      "item_name": "WHITE OUD",
+      "quantity": 3,
+      "price": 150
+    },
+    {
+      "id": 12,
+      "item_code": "J-OUD",
+      "item_name": "JAZA OUD",
+      "quantity": 3,
+      "price": 150
+    },
+    {
+      "id": 13,
+      "item_code": "JMR-01",
+      "item_name": "MUSK RIJAL",
+      "quantity": 3,
+      "price": 150
+    },
+    {
+      "id": 14,
+      "Category":"ATTAR",
+      "item_code": "JMD-10",
+      "item_name": "MARIYAM DUBAI",
+      "quantity": 3,
+      "price": 150
+    },
+    {
+      "id": 15,
+      "Category":"ATTAR",
+      "item_code": "JRS-100",
+      "item_name": "RED SPAIN",
+      "quantity": 3,
+      "price": 150
+    },
+    {
+      "id": 16,
+      "Category":"ATTAR",
+      "item_code": "JR-555",
+      "item_name": "GUCCI RUSH",
+      "quantity": 3,
+      "price": 150
+    }
+  ]
