@@ -1,127 +1,282 @@
 [
     {
       "id": 1,
-      "Category":"ATTAR",
+      "Category": "OIL",
       "item_code": "JAZA-01",
       "item_name": "LAVENDER OUD",
-      "quantity": 3,
-      "price": 200
+      "ml": 3,
+      "price": 200,
+      "Gender": "UNISEX",
+      "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
     },
     {
       "id": 2,
-      "Category":"ATTAR",
+      "Category": "OIL",
       "item_code": "JAZA-01",
       "item_name": "LAVENDER OUD",
-      "quantity": 6,
-      "price": 350
+      "ml": 6,
+      "price": 350,
+      "Gender": "UNISEX",
+      "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
     },
     {
       "id": 3,
-      "Category":"ATTAR",
+      "Category": "OIL",
       "item_code": "JAZA-01",
       "item_name": "LAVENDER OUD",
-      "quantity": 12,
-      "price": 650
+      "ml": 12,
+      "price": 650,
+      "Gender": "UNISEX"
     },
     {
       "id": 4,
-      "Category":"ATTAR",
+      "Category": "OIL",
       "item_code": "JHD-100",
       "item_name": "PURE HD",
-      "quantity": 3,
-      "price": 300
+      "ml": 3,
+      "price": 300,
+      "Gender": "UNISEX",
+      "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
     },
     {
       "id": 5,
-      "Category":"ATTAR",
+      "Category": "OIL",
       "item_code": "JHD-100",
       "item_name": "PURE HD",
-      "quantity": 6,
-      "price": 550
+      "ml": 6,
+      "price": 550,
+      "Gender": "UNISEX",
+      "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
     },
     {
       "id": 6,
-      "Category":"ATTAR",
+      "Category": "OIL",
       "item_code": "JHD-100",
       "item_name": "PURE HD",
-      "quantity": 12,
-      "price": 1100
+      "ml": 12,
+      "price": 1100,
+      "Gender": "UNISEX",
+      "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
     },
     {
       "id": 7,
-      "Category":"ATTAR",
+      "Category": "OIL",
       "item_code": "JB-111",
       "item_name": "YSL KOUROS",
-      "quantity": 3,
-      "price": 150
+      "ml": 3,
+      "price": 150,
+      "Gender": "UNISEX",
+      "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
     },
     {
       "id": 8,
-      "Category":"ATTAR",
+      "Category": "OIL",
       "item_code": "JCR-07",
       "item_name": "CR7",
-      "quantity": 3,
-      "price": 150
+      "ml": 3,
+      "price": 150,
+      "Gender": "UNISEX",
+      "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
     },
     {
       "id": 9,
-      "Category":"ATTAR",
+      "Category": "OIL",
       "item_code": "JW-103",
       "item_name": "BLACK XS",
-      "quantity": 3,
-      "price": 150
+      "ml": 3,
+      "price": 150,
+      "Gender": "UNISEX",
+      "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
     },
     {
       "id": 10,
+      "Category": "OIL",
       "item_code": "JX-777",
       "item_name": "ACTRESS",
-      "quantity": 3,
-      "price": 150
+      "ml": 3,
+      "price": 150,
+      "Gender": "UNISEX",
+      "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
     },
     {
       "id": 11,
-      "Category":"ATTAR",
+      "Category": "OIL",
       "item_code": "JWO-01",
       "item_name": "WHITE OUD",
-      "quantity": 3,
-      "price": 150
+      "ml": 3,
+      "price": 150,
+      "Gender": "UNISEX",
+      "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
     },
     {
       "id": 12,
+      "Category": "OIL",
       "item_code": "J-OUD",
       "item_name": "JAZA OUD",
-      "quantity": 3,
-      "price": 150
+      "ml": 3,
+      "price": 150,
+      "Gender": "UNISEX",
+      "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
     },
     {
       "id": 13,
+      "Category": "OIL",
       "item_code": "JMR-01",
       "item_name": "MUSK RIJAL",
-      "quantity": 3,
-      "price": 150
+      "ml": 3,
+      "price": 150,
+      "Gender": "UNISEX",
+      "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
     },
     {
       "id": 14,
-      "Category":"ATTAR",
+      "Category": "OIL",
       "item_code": "JMD-10",
       "item_name": "MARIYAM DUBAI",
-      "quantity": 3,
-      "price": 150
+      "ml": 3,
+      "price": 150,
+      "Gender": "UNISEX",
+      "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
     },
     {
       "id": 15,
-      "Category":"ATTAR",
+      "Category": "OIL",
       "item_code": "JRS-100",
       "item_name": "RED SPAIN",
-      "quantity": 3,
-      "price": 150
+      "ml": 3,
+      "price": 150,
+      "Gender": "UNISEX",
+      "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
     },
     {
       "id": 16,
-      "Category":"ATTAR",
+      "Category": "OIL",
       "item_code": "JR-555",
       "item_name": "GUCCI RUSH",
-      "quantity": 3,
-      "price": 150
-    }
-  ]
+      "ml": 3,
+      "price": 150,
+      "Gender": "UNISEX",
+      "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
+    },
+        {
+          "id": 17,
+          "Category": "PERFUME",
+          "item_code": "JHD-100",
+          "item_name": "PURE HD",
+          "ml": 100,
+          "price": 6200,
+          "sale_price": 4600,
+          "Gender": "UNISEX",
+          "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
+        },
+        {
+          "id": 18,
+          "Category": "PERFUME",
+          "item_code": "JAZA-01",
+          "item_name": "LAVENDER OUD",
+          "ml": 100,
+          "price": 3500,
+          "sale_price": 2650,
+          "Gender": "UNISEX",
+          "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
+        },
+        {
+          "id": 19,
+          "Category": "PERFUME",
+          "item_code": "JB-111",
+          "item_name": "YSL KOUROS",
+          "ml": 100,
+          "price": 3500,
+          "sale_price": 2650,
+          "Gender": "MEN",
+          "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
+        },
+        {
+          "id": 20,
+          "Category": "PERFUME",
+          "item_code": "JCR-07",
+          "item_name": "CR7",
+          "ml": 100,
+          "price": 2400,
+          "sale_price": 1800,
+          "Gender": "UNISEX",
+          "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
+        },
+        {
+          "id": 21,
+          "Category": "PERFUME",
+          "item_code": "JE-999",
+          "item_name": "ARMAANI DE GIO",
+          "ml": 100,
+          "price": 3500,
+          "sale_price": 2650,
+          "Gender": "UNISEX",
+          "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
+        },
+        {
+          "id": 22,
+          "Category": "PERFUME",
+          "item_code": "JJ-404",
+          "item_name": "ONE MILLION",
+          "ml": 100,
+          "price": 2700,
+          "sale_price": 2300,
+          "Gender": "UNISEX",
+          "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
+        },
+        {
+          "id": 23,
+          "Category": "PERFUME",
+          "item_code": "JQ-303",
+          "item_name": "BOMBSHELL",
+          "ml": 100,
+          "price": 2500,
+          "sale_price": 2200,
+          "Gender": "UNISEX",
+          "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
+        },
+        {
+          "id": 24,
+          "Category": "PERFUME",
+          "item_code": "JR-555",
+          "item_name": "GUCCI RUSH",
+          "ml": 100,
+          "price": 2450,
+          "sale_price": 1850,
+          "Gender": "UNISEX",
+          "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
+        },
+        {
+          "id": 25,
+          "Category": "PERFUME",
+          "item_code": "JW-103",
+          "item_name": "BLACK XS",
+          "ml": 100,
+          "price": 2650,
+          "sale_price": 2350,
+          "Gender": "MEN"
+        },
+        {
+          "id": 26,
+          "Category": "PERFUME",
+          "item_code": "JX-777",
+          "item_name": "ACTRESS",
+          "ml": 100,
+          "price": 2650,
+          "sale_price": 2050,
+          "Gender": "WOMEN",
+          "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
+        },
+        {
+          "id": 27,
+          "Category": "PERFUME",
+          "item_code": "JUX-X1",
+          "item_name": "UNISEX",
+          "ml": 100,
+          "price": 2350,
+          "sale_price": 1750,
+          "Gender": "UNISEX",
+          "image_url": "https://media.licdn.com/dms/image/D5622AQGV0kRyuiTfTw/feedshare-shrink_2048_1536/0/1716580211073?e=2147483647&v=beta&t=lTBpU7iZzWBcqSWPk7rcDv7l_h7IQ3I-yr1QRZaAx4Q"
+        }
+      ]
+      
