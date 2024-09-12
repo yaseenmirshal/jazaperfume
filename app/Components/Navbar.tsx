@@ -71,7 +71,7 @@ const Navbar = () => {
               onClick={() => setIsOpen(!isOpen)}
             >
               <svg
-                className="w-6 h-6 text-black hover:text-richGold"
+                className="w-6 h-6 text-slate-950 hover:text-richGold"
                 x-show="!isOpen"
                 fill="none"
                 strokeLinecap="round"
@@ -92,13 +92,13 @@ const Navbar = () => {
           <a className="block text-center  text-sm px-2 py-4 text-ivory font-semibold" style={{ color: 'black' }}>HOME</a>
         </Link>
         <Link href="/About" legacyBehavior>
-          <a className="block text-sm px-2 py-4 hover:text-richGold transition duration-300" style={{ color: 'blacK' }}>ABOUT</a>
+          <a className="block text-center  text-sm px-2 py-4 hover:text-richGold transition duration-300" style={{ color: 'blacK' }}>ABOUT</a>
         </Link>
         <Link href="/Store" legacyBehavior>
-          <a className="block text-sm px-2 py-4 hover:text-richGold transition duration-300" style={{ color: 'BLACK' }}>STORE</a>
+          <a className="block text-center  text-sm px-2 py-4 hover:text-richGold transition duration-300" style={{ color: 'BLACK' }}>STORE</a>
         </Link>
         <Link href="/Contact" legacyBehavior>
-          <a className="block text-sm px-2 py-4 hover:text-richGold transition duration-300" style={{ color: 'black' }}>CONTACT</a>
+          <a className="block text-center  text-sm px-2 py-4 hover:text-richGold transition duration-300" style={{ color: 'black' }}>CONTACT</a>
         </Link>
         <div className="flex items-center justify-around py-4">
           <FontAwesomeIcon icon={faHeart} className="text-black hover:text-richGold cursor-pointer" />

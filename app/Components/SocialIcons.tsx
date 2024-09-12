@@ -20,7 +20,7 @@ const SocialIcons = () => {
           </div>
           <div className="p-6 pt-0">
             <div style={{borderRadius:'10px'}} className="max-w-full h-10 bg-transparent items-center justify-center flex border-2 border-richGold shadow-lg hover:bg-richGold text-richGold hover:text-darkCharcoal duration-300 cursor-pointer active:scale-[0.98]">
-              <button className="px-5 py-2"><a className="font-semibold" href="#">CHECK OUT</a></button>
+              <button className="px-5 py-2"><a className="font-semibold" href="/Store">CHECK OUT</a></button>
             </div>
           </div>
         </div>
@@ -38,7 +38,7 @@ const SocialIcons = () => {
           </div>
           <div className="p-6 pt-0">
             <div style={{borderRadius:'10px'}} className="max-w-full h-10 bg-transparent items-center justify-center flex border-2 border-richGold shadow-lg hover:bg-richGold text-richGold hover:text-darkCharcoal duration-300 cursor-pointer active:scale-[0.98]">
-              <button className="px-5 py-2"><a className="font-semibold" href="">CHECK OUT</a></button>
+              <button className="px-5 py-2"><a className="font-semibold" href="/Store">CHECK OUT</a></button>
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@ const SocialIcons = () => {
           </div>
           <div className="p-6 pt-0">
             <div style={{borderRadius:'10px'}} className="max-w-full h-10 bg-transparent items-center justify-center flex border-2 border-richGold shadow-lg hover:bg-richGold text-richGold hover:text-darkCharcoal duration-300 cursor-pointer active:scale-[0.98]">
-              <button className="px-5 py-2"><a className="font-semibold" href="">CHECK OUT</a></button>
+              <button className="px-5 py-2"><a className="font-semibold" href="/Store">CHECK OUT</a></button>
             </div>
           </div>
         </div>
