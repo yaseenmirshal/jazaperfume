@@ -95,7 +95,7 @@ const perfumes = [
 
   return (
     <>
-    <div className="container mx-auto py-8 bg-slate-100  ">
+    <div className="container mx-auto py-0 bg-white  w-full ">
       <Slider {...settings}>
         {perfumes.map((perfume) => (
           <div key={perfume.id} className="p-4">

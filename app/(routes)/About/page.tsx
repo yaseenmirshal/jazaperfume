@@ -1,8 +1,17 @@
-import React from 'react'
+
+import React from 'react';
+import Navbar from "@/app/Components/Navbar";
 
 function page() {
   return (
-    <div>page</div>
+    <>
+    <Navbar/>
+    <div className='h-screen w-full pt-32'>
+    <h1 className='text-white ml-10 text-2xl'>ABOUT COMING SOON... </h1>
+    </div>
+    
+    </>
+    
   )
 }
 

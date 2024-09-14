@@ -18,7 +18,7 @@ const Carousel = () => {
 
   return (
     <>
-    <div className='w-full h-auto md:h-80 justify-center p-0 bg-white'>
+    <div className='block lg:hidden w-full h-auto md:h-80 justify-center p-0 bg-white'>
       <div className="relative w-full h-auto overflow-hidden ">
         <div
           className="flex transition-transform duration-1000 ease-in-out"

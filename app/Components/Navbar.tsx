@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 w-full   shadow-lg transition transform ${
+      className={`fixed top-0 w-full  shadow-lg transition transform ${
         visible ? 'translate-y-0' : '-translate-y-full'
       } duration-500 ease-in-out z-50`}
       style={{  
@@ -44,25 +44,25 @@ const Navbar = () => {
           </div>
           <div className="hidden md:flex justify-center flex-grow space-x-10 max-h-20">
             <Link href="/" legacyBehavior>
-              <a className="py-4 px-2 text-ivory border-b-4 border-ivory font-semibold" style={{ color: '#FFFFF0' }}>HOME</a>
+              <a className="py-4 px-2 text-ivory border-b-4 border-black font-semibold" style={{ color: 'black' }}>HOME</a>
             </Link>
             <Link href="/About" legacyBehavior>
-              <a className="py-4 px-2 text-lightGray font-semibold hover:text-richGold transition duration-300" style={{ color: '#D3D3D3' }}>ABOUT</a>
+              <a className="py-4 px-2 text-lightGray font-semibold hover:text-richGold transition duration-300" style={{ color: 'black' }}>ABOUT</a>
             </Link>
             <Link href="/Contact" legacyBehavior>
-              <a className="py-4 px-2 text-lightGray font-semibold hover:text-richGold transition duration-300" style={{ color: '#D3D3D3' }}>CONTACT</a>
+              <a className="py-4 px-2 text-lightGray font-semibold hover:text-richGold transition duration-300" style={{ color: 'black' }}>CONTACT</a>
             </Link>
             <Link href="/Store" legacyBehavior>
-              <a className="py-4 px-2 text-lightGray font-semibold hover:text-richGold transition duration-300" style={{ color: '#D3D3D3' }}>STORE</a>
+              <a className="py-4 px-2 text-lightGray font-semibold hover:text-richGold transition duration-300" style={{ color: 'black' }}>STORE</a>
             </Link>
             <Link href="/" legacyBehavior>
-              <a className="py-4 px-2 text-lightGray font-semibold hover:text-richGold transition duration-300" style={{ color: '#D3D3D3' }}>CATEGORIES</a>
+              <a className="py-4 px-2 text-lightGray font-semibold hover:text-richGold transition duration-300" style={{ color: 'black' }}>CATEGORIES</a>
             </Link>
           </div>
           <div className="hidden md:flex items-center space-x-9 mr-5">
-            <FontAwesomeIcon icon={faHeart} className="text-lightGray hover:text-richGold cursor-pointer" />
-            <FontAwesomeIcon icon={faShoppingCart} className="text-lightGray hover:text-richGold cursor-pointer" />
-            <Link href="/Signup"><FontAwesomeIcon icon={faUser} className="text-lightGray hover:text-richGold cursor-pointer" /></Link>
+            <FontAwesomeIcon icon={faHeart} className="text-black hover:text-richGold cursor-pointer" />
+            <FontAwesomeIcon icon={faShoppingCart} className="text-black hover:text-richGold cursor-pointer" />
+            <Link href="/Signup"><FontAwesomeIcon icon={faUser} className="text-black hover:text-richGold cursor-pointer" /></Link>
           </div>
 
           <div className="md:hidden flex items-center">
