@@ -13,18 +13,30 @@ function Footer() {
                 <p className="text-base leading-relaxed text-gray-600 mt-7">Jaza Perfumes offers a luxurious collection of premium fragrances, crafted to inspire elegance and sophistication. Discover our unique blends that captivate the senses and leave a lasting impression.</p>
 
                 <ul className="flex items-center space-x-3 mt-9">
-                    <li>
-                        <a href="#" title="" className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-blue-600 focus:bg-blue-600">
-                            <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
-                                ></path>
-                            </svg>
-                        </a>
-                    </li>
+                  
 
                     <li>
-                        <a href="#" title="" className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-blue-600 focus:bg-blue-600">
+  <a href="http://wa.me/9207234999" title="" className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-green-600 focus:bg-green-600">
+    <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.757-.867-2.03-.966-.273-.1-.472-.148-.671.15-.198.297-.767.966-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.882-.788-1.48-1.762-1.653-2.059-.173-.297-.018-.458.13-.607.134-.133.297-.347.446-.521.149-.173.198-.297.298-.496.099-.198.05-.371-.025-.521-.074-.149-.671-1.612-.918-2.207-.242-.579-.486-.5-.671-.51h-.574c-.198 0-.521.074-.795.372-.273.297-1.042 1.018-1.042 2.48s1.068 2.876 1.218 3.074c.149.198 2.106 3.222 5.104 4.52.714.308 1.271.492 1.706.63.717.227 1.369.195 1.883.118.575-.086 1.757-.719 2.005-1.414.247-.695.247-1.29.173-1.414-.074-.124-.273-.198-.57-.347z"></path>
+      <path d="M20.52 3.484A11.994 11.994 0 0 0 12.005 0C5.373 0 .004 5.373.004 12.005c0 2.118.554 4.182 1.61 6.005L.004 24l6.197-1.602A11.957 11.957 0 0 0 12.005 24c6.631 0 12.005-5.373 12.005-11.995 0-3.198-1.246-6.203-3.49-8.521zM12.005 22.13c-1.936 0-3.835-.518-5.496-1.497l-.393-.232-3.678.953.984-3.587-.257-.366c-1.016-1.448-1.556-3.15-1.556-4.998 0-5.473 4.456-9.929 9.932-9.929 2.652 0 5.144 1.032 7.013 2.905a9.871 9.871 0 0 1 2.91 7.017c-.001 5.475-4.457 9.93-9.932 9.93z"></path>
+    </svg>
+  </a>
+</li>
+
+<li>
+  <a href="https://www.youtube.com/@JazaPerfumes" title="" className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-red-600 focus:bg-red-600">
+    <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M23.498 6.186a2.982 2.982 0 0 0-2.098-2.098C19.77 3.504 12 3.504 12 3.504s-7.77 0-9.4.584a2.982 2.982 0 0 0-2.098 2.098c-.584 1.63-.584 5.022-.584 5.022s0 3.392.584 5.022a2.982 2.982 0 0 0 2.098 2.098c1.63.584 9.4.584 9.4.584s7.77 0 9.4-.584a2.982 2.982 0 0 0 2.098-2.098c.584-1.63.584-5.022.584-5.022s0-3.392-.584-5.022zM9.749 15.567V8.432l6.195 3.568-6.195 3.567z"></path>
+    </svg>
+  </a>
+</li>
+
+
+
+
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100089250220983" title="" className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-blue-600 focus:bg-blue-600">
                             <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path>
                             </svg>
@@ -32,7 +44,7 @@ function Footer() {
                     </li>
 
                     <li>
-                        <a href="#" title="" className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-blue-600 focus:bg-blue-600">
+                        <a href="https://www.instagram.com/jazaperfumes/" title="" className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-blue-600 focus:bg-blue-600">
                             <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path>
                                 <circle cx="16.806" cy="7.207" r="1.078"></circle>
@@ -43,17 +55,7 @@ function Footer() {
                         </a>
                     </li>
 
-                    <li>
-                        <a href="#" title="" className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-blue-600 focus:bg-blue-600">
-                            <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
-                                ></path>
-                            </svg>
-                        </a>
-                    </li>
+                   
                 </ul>
             </div>
 
@@ -74,8 +76,10 @@ function Footer() {
                     </li>
 
                     <li>
-                        <a href="#" title="" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Career </a>
+                        <a href="https://www.google.com/maps/place/JAZA+PERFUMES/@11.3532039,75.9173844,17.84z/data=!4m6!3m5!1s0x3ba6439216aae84f:0x316018f985e4b5fd!8m2!3d11.3525223!4d75.9192932!16s%2Fg%2F11tt4nqz07?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D" title="" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Location </a>
                     </li>
+
+                    
                 </ul>
             </div>
 
@@ -84,8 +88,9 @@ function Footer() {
 
                 <ul className="mt-6 space-y-4">
                     <li>
-                        <a href="#" title="" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Customer Support </a>
+                        <a href="http://wa.me/9207234999" title="" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Customer Support </a>
                     </li>
+                    
 
                     <li>
                         <a href="#" title="" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Delivery Details </a>

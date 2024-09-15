@@ -3,7 +3,8 @@
 import Sidebar from "./Sidebar";
 import Navbar from "@/app/Components/Navbar";
 import { useEffect, useState, } from "react";
-import { FaSortAmountDownAlt, FaFilter } from 'react-icons/fa'
+import { FaSortAmountDownAlt, FaFilter } from 'react-icons/fa';
+import Link from 'next/link';
 
 function Page() {
 
@@ -228,9 +229,13 @@ function Page() {
                     </p>
                    
                   </div>
-                  <button className="w-full py-2 px-4 bg-[#A9864E] text-white rounded-lg hover:bg-zinc-800 transition duration-300">
-                    Add to Cart
-                  </button>
+                  <Link href="/ProductView" legacyBehavior>
+      <a>
+        <button className="w-full py-2 px-4 bg-[#A9864E] text-white rounded-lg hover:bg-zinc-800 transition duration-300">
+          Add to Cart
+        </button>
+      </a>
+    </Link>
                 </div>
               </div>
             ))}
