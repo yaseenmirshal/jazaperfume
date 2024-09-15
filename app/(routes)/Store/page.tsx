@@ -70,6 +70,7 @@ function Page() {
       price: 449,
       originalPrice: 699,
       discount: "39% OFF",
+      description:'OUD LAVENDER is a unisex fragrance that exudes sophistication, and is perfect for those that enjoy luxury and indulging in themselves. '
     },
     {
       id: 1,
@@ -81,6 +82,8 @@ function Page() {
       price: 449,
       originalPrice: 699,
       discount: "39% OFF",
+      description:'OUD LAVENDER is a unisex fragrance that exudes sophistication, and is perfect for those that enjoy luxury and indulging in themselves. '
+
     },
     {
       id: 1,
@@ -92,6 +95,8 @@ function Page() {
       price: 449,
       originalPrice: 699,
       discount: "39% OFF",
+      description:'OUD LAVENDER is a unisex fragrance that exudes sophistication, and is perfect for those that enjoy luxury and indulging in themselves. '
+
     },
     {
       id: 1,
@@ -103,6 +108,8 @@ function Page() {
       price: 449,
       originalPrice: 699,
       discount: "39% OFF",
+      description:'OUD LAVENDER is a unisex fragrance that exudes sophistication, and is perfect for those that enjoy luxury and indulging in themselves. '
+
     },
     {
       id: 1,
@@ -114,6 +121,8 @@ function Page() {
       price: 449,
       originalPrice: 699,
       discount: "39% OFF",
+      description:'OUD LAVENDER is a unisex fragrance that exudes sophistication, and is perfect for those that enjoy luxury and indulging in themselves.'
+
     },
     {
       id: 1,
@@ -125,6 +134,8 @@ function Page() {
       price: 449,
       originalPrice: 699,
       discount: "39% OFF",
+      description:'OUD LAVENDER is a unisex fragrance that exudes sophistication, and is perfect for those that enjoy luxury and indulging in themselves. '
+
     },
     {
       id: 1,
@@ -136,6 +147,8 @@ function Page() {
       price: 449,
       originalPrice: 699,
       discount: "39% OFF",
+      description:'OUD LAVENDER is a unisex fragrance that exudes sophistication, and is perfect for those that enjoy luxury and indulging in themselves. '
+
     },
     {
       id: 1,
@@ -147,6 +160,8 @@ function Page() {
       price: 449,
       originalPrice: 699,
       discount: "39% OFF",
+      description:'OUD LAVENDER is a unisex fragrance that exudes sophistication, and is perfect for those that enjoy luxury and indulging in themselves. '
+
     },
     {
       id: 1,
@@ -158,6 +173,8 @@ function Page() {
       price: 449,
       originalPrice: 699,
       discount: "39% OFF",
+      description:'OUD LAVENDER is a unisex fragrance that exudes sophistication, and is perfect for those that enjoy luxury and indulging in themselves. '
+
      
     },
     // Your products data...
@@ -168,80 +185,61 @@ function Page() {
         {/* Sidebar */}
         <Sidebar/>
         <Navbar/>
-        {/* Products Section */}
-        <div className="flex-1 bg-gray-100 p-4 pt-28 overflow-auto">
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {products.map((product) => (
+          {/* Products Section */}
+          <div className="flex-1 bg-gray-100 p-4 pt-28 overflow-auto">
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 md:p-4">
+        {products.map((product) => (
+          <Link href="/ProductView" key={product.id} legacyBehavior>
+            <a className="block">
               <div
-                key={product.id}
-                className="group flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-md transition-all duration-300 hover:shadow-lg"
+                className="relative flex flex-col overflow-hidden border border-gray-200 bg-white shadow-md transition-transform transform hover:scale-105 hover:shadow-lg cursor-pointer"
               >
-                <a className="relative flex h-60 w-full overflow-hidden rounded-xl" href="#">
-                  <img
-                    className="peer absolute top-0 right-0 h-full w-full object-cover transition-all duration-500"
-                    src={product.image1}
-                    alt="product image"
-                  />
-                  <img
-                    className="peer absolute top-0 -right-full h-full w-full object-cover transition-all delay-100 duration-1000 hover:right-0 peer-hover:right-0"
-                    src={product.image2}
-                    alt="product image"
-                  />
-                  
-                  <div className="absolute bottom-0 mb-4 flex space-x-4 w-full justify-center">
-                    <div className="rounded-full h-3 w-3 bg-gray-300 border-2 border-white"></div>
-                    <div className="rounded-full h-3 w-3 bg-gray-300 border-2 border-white"></div>
-                    <div className="rounded-full h-3 w-3 bg-gray-300 border-2 border-white"></div>
-                  </div>
-                  <svg
-                    className=" pointer-events-none absolute inset-x-0 bottom-5 mx-auto text-3xl text-white transition-opacity group-hover:animate-ping group-hover:opacity-30 peer-hover:opacity-0"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                    role="img"
-                    width="1em"
-                    height="1em"
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 32 32"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M2 10a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v10a4 4 0 0 1-2.328 3.635a2.996 2.996 0 0 0-.55-.756l-8-8A3 3 0 0 0 14 17v7H6a4 4 0 0 1-4-4V10Zm14 19a1 1 0 0 0 1.8.6l2.7-3.6H25a1 1 0 0 0 .707-1.707l-8-8A1 1 0 0 0 16 17v12Z"
+                {/* Image Section */}
+                <div className="relative w-full h-48 md:h-60 overflow-hidden">
+                  <div className="absolute inset-0 transition-transform duration-300 ease-in-out transform group-hover:rotate-y-180">
+                    <img
+                      className="w-full h-full object-cover"
+                      src={product.image1}
+                      alt={product.name}
                     />
-                  </svg>
-                  <span className="absolute top-0 left-0 m-2 rounded-full bg-blue-600 px-2 text-center text-sm font-medium text-white">
-                    {product.discount}
-                  </span>
-                </a>
-                <div className=" mt-4 px-4 pb-4">
-                  <div className="flex justify-between w-full h-7  mr-3">
-                  <a href="#">
-                    <h5 className=" text-lg font-semibold text-gray-800">{product.name}</h5>
-                  </a>
-                  
-                  <svg  width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"/></svg>
+                  </div>
+                  <div className="absolute inset-0 transition-transform duration-300 ease-in-out transform rotate-y-180 group-hover:rotate-y-0">
+                    <img
+                      className="w-full h-full object-cover"
+                      src={product.image2}
+                      alt={product.name}
+                    />
+                  </div>
                 </div>
 
-                  <div className="mt-2 mb-4 flex items-center justify-between">
-                    <p>
-                      <span className="text-2xl font-bold text-gray-800">₹{product.price}</span>
-                      <span className="text-sm text-gray-500 line-through ml-2">₹{product.originalPrice}</span>
+                {/* Product Details */}
+                <div className="p-2 md:p-4 flex flex-col justify-between h-full">
+                  <div>
+                    <h5 className="text-sm md:text-lg font-semibold text-gray-800">{product.name}</h5>
+                    <p className="mt-1 md:mt-2 mb-2 md:mb-4 text-xs md:text-sm text-gray-600">
+                      {product.description}
                     </p>
-                   
+                    <div className="flex items-center justify-between">
+                      <p className="text-sm md:text-2xl font-bold text-gray-800">
+                        ₹{product.price}
+                        <span className="text-xs md:text-sm text-gray-500 line-through ml-2">
+                          ₹{product.originalPrice}
+                        </span>
+                      </p>
+                      <span className="bg-blue-600 text-white text-xs md:text-sm px-2 py-1 rounded-full">
+                        {product.discount}
+                      </span>
+                    </div>
                   </div>
-                  <Link href="/ProductView" legacyBehavior>
-      <a>
-        <button className="w-full py-2 px-4 bg-[#A9864E] text-white rounded-lg hover:bg-zinc-800 transition duration-300">
-          Add to Cart
-        </button>
-      </a>
-    </Link>
                 </div>
               </div>
-            ))}
-          
-        </div>
-        </div>
+            </a>
+          </Link>
+        ))}
+      </div>
+    </div>
+
+
         </div>
 
         {/* Bottom bar for mobile */}
