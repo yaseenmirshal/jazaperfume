@@ -22,17 +22,13 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 w-full  shadow-lg transition transform ${
-        visible ? 'translate-y-0' : '-translate-y-full'
-      } duration-500 ease-in-out z-50`}
-      style={{  
-        backgroundColor: 'white', // Semi-transparent background color
-        // backdropFilter: 'blur(10px)', // Blur effect
-        // WebkitBackdropFilter: 'blur(10px)', // Safari support
-        // borderBottom: '1px solid rgba(255, 255, 255, 0.18)', // Light border to enhance the glass effect
-        // boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)' // Subtle shadow for depth
-      }}
-    >
+    className={`fixed top-0 w-full shadow-lg transition transform ${
+      visible ? 'translate-y-0' : '-translate-y-full'
+    } duration-500 ease-in-out z-50`}
+    style={{
+      backgroundColor: 'white',
+    }}
+  >
       <div className="mx-auto px-4 max-h-20">
         <div className="flex justify-between items-center max-h-20">
           <div className="flex items-center">
