@@ -102,7 +102,7 @@ const Navbar = () => {
         </Link>
         <div className="flex items-center justify-around py-4">
           <FontAwesomeIcon icon={faHeart} className="text-black hover:text-richGold cursor-pointer" />
-          <FontAwesomeIcon icon={faShoppingCart} className="text-black hover:text-richGold cursor-pointer" />
+          <Link href="/Cart"><FontAwesomeIcon icon={faShoppingCart} className="text-black hover:text-richGold cursor-pointer" /></Link>
           <Link href="/Signup">
            <FontAwesomeIcon icon={faUser} className="text-black hover:text-richGold cursor-pointer" /> 
             </Link>
