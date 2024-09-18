@@ -88,7 +88,7 @@ const ProductView = () => {
             {/* Buy Now Button */}
             <button
               onClick={buyNow}
-              className="flex-1 px-6 py-3 bg-[#FF5A5F] text-white font-semibold rounded-md shadow-md hover:bg-[#FF414D] transition-all duration-300"
+              className="flex-1 px-6 py-3 bg-black text-white font-semibold rounded-md shadow-md hover:bg-[#FF414D] transition-all duration-300"
             >
               Buy Now
             </button>

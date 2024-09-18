@@ -60,8 +60,8 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="hidden md:flex items-center space-x-9 mr-5">
-            <FontAwesomeIcon icon={faHeart} className="text-black hover:text-richGold cursor-pointer" />
-            <FontAwesomeIcon icon={faShoppingCart} className="text-black hover:text-richGold cursor-pointer" />
+          <Link href="/Liked"><FontAwesomeIcon icon={faHeart} className="text-black hover:text-richGold cursor-pointer" /></Link>
+            <Link href="/Cart"><FontAwesomeIcon icon={faShoppingCart} className="text-black hover:text-richGold cursor-pointer" /></Link>
             <Link href="/Signup"><FontAwesomeIcon icon={faUser} className="text-black hover:text-richGold cursor-pointer" /></Link>
           </div>
 
