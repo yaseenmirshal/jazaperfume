@@ -1,6 +1,7 @@
 'use client';
 import { useState } from "react";
 import { Trash, ArrowLeft } from 'react-feather';
+import Navbar from "@/app/Components/Navbar";
 
 const Cart = () => {
   const [cartItems, setCartItems] = useState([
@@ -65,7 +66,10 @@ const Cart = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col lg:flex-row bg-white p-4 lg:p-8">
+    <>
+    <Navbar/>
+    <div className="min-h-screen flex flex-col lg:flex-row bg-white p-4 lg:p-8 pt-8 lg:pt-28">
+
       {/* Back to Store Button */}
       <div className="mb-6">
         <a href="./Store">
@@ -136,46 +140,105 @@ const Cart = () => {
         </div>
       </div>
 
-      {/* Order Summary Section */}
-      <div className="w-full lg:w-2/5 bg-black text-white shadow-md rounded-lg p-4 sm:p-6">
-        <h2 className="text-xl sm:text-2xl font-semibold mb-4">Order Summary</h2>
-        <div className="space-y-4">
-          <div className="flex justify-between">
-            <span className="text-gray-300">Subtotal</span>
-            <span className="font-semibold text-white">₹{getTotalCost()}</span>
-          </div>
-          <div className="flex justify-between items-center">
-            <span className="text-gray-300">Shipping</span>
-            <select className="bg-black text-gray-300 border border-gray-600 rounded-md p-2">
-              <option>USPS (₹9.00)</option>
-              <option>FedEx (₹12.00)</option>
-            </select>
-          </div>
-          <div className="flex flex-col">
-            <label htmlFor="promo-code" className="text-gray-300">
-              Promo Code
-            </label>
-            <input
-              type="text"
-              id="promo-code"
-              placeholder="Enter promo code"
-              className="mt-2 p-2 bg-gray-900 text-white border border-gray-600 rounded-md"
-            />
-          </div>
-        </div>
-        <div className="border-t border-gray-700 mt-6 pt-4">
-          <div className="flex justify-between">
-            <span className="text-gray-300">Total Cost</span>
-            <span className="font-semibold text-white">
-              ₹{(parseFloat(getTotalCost()) + 9).toFixed(2)}
-            </span>
-          </div>
-        </div>
-        <button className="w-full mt-6 bg-white text-black py-3 rounded-md hover:bg-gray-300 transition">
-          Checkout
-        </button>
+     {/* Order Summary Section */}
+<div className="w-full lg:w-2/5 bg-black text-white shadow-md rounded-lg p-4 sm:p-6">
+  {/* Shipping Address Section */}
+  <div className="mb-6">
+    <h2 className="text-xl sm:text-2xl font-semibold mb-4">Shipping Address</h2>
+    <div className="space-y-2">
+      {/* Default Address */}
+      <div className="bg-gray-900 p-3 rounded-md">
+        <p className="font-semibold">John Doe</p>
+        <p>1234 Main Street</p>
+        <p>City, State, 12345</p>
       </div>
+
+      {/* Add/Change Address Button */}
+      <button className="w-full mt-2 bg-white text-black py-2 rounded-md hover:bg-gray-300 transition">
+        Add/Change Address
+      </button>
     </div>
+  </div>
+
+  {/* Order Summary Section */}
+  <h2 className="text-xl sm:text-2xl font-semibold mb-4">Order Summary</h2>
+  <div className="space-y-4">
+    <div className="flex justify-between">
+      <span className="text-gray-300">Subtotal</span>
+      <span className="font-semibold text-white">₹{getTotalCost()}</span>
+    </div>
+
+    {/* Shipping Options */}
+    <div className="flex justify-between items-center">
+      <span className="text-gray-300">Shipping</span>
+      <select className="bg-black text-gray-300 border border-gray-600 rounded-md p-2">
+        <option>USPS (₹9.00)</option>
+        <option>FedEx (₹12.00)</option>
+      </select>
+    </div>
+
+    {/* Promo Code */}
+    <div className="flex flex-col">
+      <label htmlFor="promo-code" className="text-gray-300">
+        Promo Code
+      </label>
+      <input
+        type="text"
+        id="promo-code"
+        placeholder="Enter promo code"
+        className="mt-2 p-2 bg-gray-900 text-white border border-gray-600 rounded-md"
+      />
+    </div>
+  </div>
+
+  {/* Total Cost */}
+  <div className="border-t border-gray-700 mt-6 pt-4">
+    <div className="flex justify-between">
+      <span className="text-gray-300">Total Cost</span>
+      <span className="font-semibold text-white">
+        ₹{(parseFloat(getTotalCost()) + 9).toFixed(2)}
+      </span>
+    </div>
+  </div>
+
+  {/* Payment Options */}
+  <div className="mt-6">
+    <h3 className="text-xl font-semibold mb-2">Payment Options</h3>
+    <div className="space-y-3">
+      {/* GPay */}
+      <label className="flex items-center">
+        <input type="radio" name="payment-method" className="form-radio text-gray-300" />
+        <span className="ml-2">GPay</span>
+      </label>
+
+      {/* PhonePe */}
+      <label className="flex items-center">
+        <input type="radio" name="payment-method" className="form-radio text-gray-300" />
+        <span className="ml-2">PhonePe</span>
+      </label>
+
+      {/* UPI ID */}
+      <label className="flex items-center">
+        <input type="radio" name="payment-method" className="form-radio text-gray-300" />
+        <span className="ml-2">UPI ID</span>
+      </label>
+
+      {/* Cash on Delivery */}
+      <label className="flex items-center">
+        <input type="radio" name="payment-method" className="form-radio text-gray-300" />
+        <span className="ml-2">Cash on Delivery</span>
+      </label>
+    </div>
+  </div>
+
+  {/* Checkout Button */}
+  <button className="w-full mt-6 bg-white text-black py-3 rounded-md hover:bg-gray-300 transition">
+    Checkout
+  </button>
+</div>
+
+    </div>
+    </>
   );
 };
 

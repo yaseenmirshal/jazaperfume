@@ -19,65 +19,60 @@ function Page() {
 
   return (
     <>
-      <section
-        className="min-h-screen flex items-center justify-center text-white bg-cover bg-no-repeat"
-        style={{ backgroundImage: "url(./perfumelonland.png)" }}
-      >
-        <div className="absolute bg-black opacity-30 inset-0 z-0"></div>
-
-        <div className="absolute top-4 left-4 px-2 z-20 p-0 rounded-2xl shadow-md backdrop-filter backdrop-blur-lg bg-white bg-opacity-15">
-          <Link
-            href="/"
-            className="flex items-center space-x-1 text-white  font-medium"
-          >
+      <section className="min-h-screen flex items-center justify-center bg-white">
+        {/* Back Button */}
+        <div className="absolute top-4 left-4">
+          <Link href="/" className="flex items-center space-x-2 text-gray-600">
             <IconButton
               aria-label="back"
               sx={{ color: "inherit", borderRadius: "50%" }}
             >
               <ArrowBack />
             </IconButton>
-            <span className="text-sm ">Back to home</span>
+            
           </Link>
         </div>
 
-        <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between w-full px-4 lg:px-24">
+        <div className="relative flex flex-col lg:flex-row items-center justify-center w-full px-4 lg:px-16">
           {/* Left Side Content */}
-          <div className="text-center lg:text-left lg:w-1/2 mb-8 lg:mb-0 lg:mr-20 hidden lg:block">
-            <h1 className="text-4xl lg:text-5xl font-bold tracking-wide">
-              Reconnect with Elegance
+          <div className="hidden lg:block lg:w-1/2 text-center lg:text-left">
+            <h1 className="text-4xl font-bold text-gray-800">
+              Welcome Back!
             </h1>
-            <p className="text-2xl lg:text-3xl my-4">
-              Log in to rediscover your favorite fragrances and new arrivals.
+            <p className="text-xl text-gray-500 mt-4">
+              Log in to rediscover our fragrances.
             </p>
           </div>
 
-          {/* Right Side Sign-Up Form */}
-          <div className="w-full lg:w-1/3 bg-white rounded-lg shadow-lg p-4 lg:p-6">
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-4 lg:mb-6">
-              Welcome.
+          {/* Right Side Login Form */}
+          <div className="w-full lg:w-1/3 bg-white rounded-lg shadow-lg p-8">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
+              Login
             </h2>
 
             <Box
               component="form"
               sx={{
-                "& > :not(style)": { mb: 2, width: "100%" }, // Increased gap between fields
+                "& > :not(style)": { mb: 3, width: "100%" },
               }}
               noValidate
               autoComplete="off"
             >
+              {/* Email Input */}
               <TextField
                 id="email"
                 label="Email"
                 variant="outlined"
                 sx={{
                   borderRadius: "8px",
-                  backgroundColor: "#f5f5f5",
+                  backgroundColor: "#f9f9f9",
                   input: { color: "black", padding: "0.8rem" },
                   label: { color: "gray" },
                   height: "3rem",
                 }}
               />
 
+              {/* Password Input */}
               <TextField
                 id="password"
                 label="Password"
@@ -85,7 +80,7 @@ function Page() {
                 variant="outlined"
                 sx={{
                   borderRadius: "8px",
-                  backgroundColor: "#f5f5f5",
+                  backgroundColor: "#f9f9f9",
                   input: { color: "black", padding: "0.8rem" },
                   label: { color: "gray" },
                   height: "3rem",
@@ -105,14 +100,16 @@ function Page() {
                 }}
               />
 
-              <button className="bg-gray-800 p-2 rounded-lg text-white text-lg mt-4 w-full shadow-md">
+              {/* Login Button */}
+              <button className="bg-black text-white w-full p-3 rounded-lg text-lg shadow-md hover:bg-gray-800 transition">
                 Login
               </button>
-              {/* Sign Up with Google button */}
+
+              {/* Sign Up with Google Button */}
               <Button
                 variant="outlined"
                 color="inherit"
-                className=" w-full"
+                className="mt-4 w-full"
                 sx={{
                   borderColor: "#4285F4",
                   color: "#4285F4",
@@ -127,13 +124,12 @@ function Page() {
                 Login with Google
               </Button>
 
+              {/* Sign Up Link */}
               <Link href="/Signup" legacyBehavior>
-                <div className=" text-center">
-                  <p className="text-gray-600">
+                <div className="text-center mt-4">
+                  <p className="text-gray-500">
                     Don't have an account?{" "}
-                    <a href="./Login" className="text-blue-500 hover:underline">
-                      Signup
-                    </a>
+                    <a className="text-blue-500 hover:underline">Signup</a>
                   </p>
                 </div>
               </Link>
