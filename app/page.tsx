@@ -9,13 +9,13 @@ const Home = () => {
     <>
       <Navbar />
 
-      <div className="hidden flex-col md:flex-row">
+      <div className="hidden lg:flex flex-col md:flex-row">
         {/* Left Column */}
         <div
           className="w-full h-screen items-center justify-start pt-10 px-6 md:px-16 bg-cover bg-center"
           style={{ backgroundImage: 'url(./b4full.png)', zIndex: '-1' }}
         >
-          <div className="text-left">
+          <div className="text-left pt-72">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6 text-[#3E2723]">
               Discover Your <br />Signature Scent
             </h1>

@@ -26,10 +26,6 @@ function Page() {
 
 
   };
-
-  
-   
-
   const categories = [
     'FRAGRANCE',
     'AVAILABILITY',

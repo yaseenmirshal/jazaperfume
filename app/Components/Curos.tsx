@@ -94,12 +94,14 @@ const perfumes = [
   };
 
   return (
-    <>
-    <div className="container mx-auto py-0 bg-white  w-full ">
+    <> <div className='w-full  bg-[#F7F3E9]'>
+    <div className="container mx-auto py-0 bg-[#F7F3E9] w-full "> 
+     
       <Slider {...settings}>
         {perfumes.map((perfume) => (
-          <div key={perfume.id} className="p-4">
-            <div className="bg-[#333333] rounded-xl shadow-md overflow-hidden">
+         
+          <div key={perfume.id} className="p-4 pb-10">
+            <div className="bg-[#333333] rounded-xl overflow-hidden">
               <div
                 style={{ backgroundImage: `url(${perfume.image})` }}
                 className="bg-cover bg-center h-60"
@@ -118,9 +120,10 @@ const perfumes = [
               </div>
             </div>
           </div>
+          
         ))}
       </Slider>
-
+</div>
     </div>
     </>
   );

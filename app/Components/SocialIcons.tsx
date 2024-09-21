@@ -6,7 +6,7 @@ const SocialIcons = () => {
   return (
     <>
      <Curostop/>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 w-full min-h-auto bg-darkCharcoal px-4 py-8 md:px-16 md:py-14 bg-white">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 w-full min-h-auto bg-darkCharcoal px-4 py-8 md:px-16 md:py-14 bg-[#F7F3E9]">
         {/* Fragrances Card */}
           <div className="flex flex-col rounded-xl w-full bg-[#1e1e1e] text-[#e0e0e0] shadow-md transition-transform duration-500 mb-8 mt-10 md:mb-0 md:mt-0 md:hover:scale-105 hover:object-scale-down">
   <div style={{backgroundImage: `url('./jazabottles.jpg')`}} className="rounded-xl mx-4 -mt-6 h-40 bg-[#333333] bg-clip-border text-white shadow-lg bg-gradient-to-r bg-cover bg-center"></div>
@@ -68,10 +68,10 @@ const SocialIcons = () => {
         </div>
       </div>
       <Curos/>
-      <div className='w-full h-96 flex'>
+      <div className='w-full h-auto flex'>
        
         {/* Men Card */}
-        <div className='relative flex w-1/2 h-96 pt-10 bg-white'>
+        <div className='relative border-none flex w-1/2 h-96  bg-white'>
           <div className='relative w-full h-full overflow-hidden'>
             <div
               style={{ backgroundImage: `url('https://i.pinimg.com/736x/2f/da/4b/2fda4bb2f061b21b541d5bcd2304ce62.jpg')` }}
@@ -84,7 +84,7 @@ const SocialIcons = () => {
         </div>
 
         {/* Women Card */}
-        <div className='relative flex w-1/2 h-96 pt-10 bg-white'>
+        <div className='relative flex w-1/2 h-96  bg-white'>
           <div className='relative w-full h-full overflow-hidden'>
             <div
               style={{ backgroundImage: `url('https://perfumania.com/cdn/shop/articles/Best_Versace_Perfumes_for_Women_in_2024.webp?v=1715884495')` }}
@@ -108,12 +108,12 @@ const SocialIcons = () => {
         style={{ backgroundImage: 'url(./jazabanner.jpg)' }}
       ></div> */}
 
-      {/* Video section */}
+      {/* Video section
       <div className='flex w-full min-h-auto bg-darkCharcoal justify-center'>
         <div style={{ position: 'relative', maxWidth: '100%' }}>
           <video src="./jazavid.mp4" className='w-full h-auto' autoPlay muted loop />
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
