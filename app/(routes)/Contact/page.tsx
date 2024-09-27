@@ -1,120 +1,150 @@
-// pages/contact.tsx
 "use client";
-import React, { useState } from "react";
-import Navbar from "@/app/Components/Navbar";
+import { useState,useEffect } from "react";
+import { Carousel } from "react-responsive-carousel"; // You can use any carousel library
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-const ContactPage = () => {
+
+const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
+    surname: "",
     email: "",
     message: "",
   });
 
-  const handleInputChange = (
+  const images = [
+    '/redbo.jpeg',
+    '/rose.jpeg',
+    '/luxury.jpeg',
+    '/gold.jpeg',
+  ];
+
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
+
+  const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form Submitted", formData);
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
+
+    // Basic validation
+    if (
+      !formData.name ||
+      !formData.surname ||
+      !formData.email ||
+      !formData.message
+    ) {
+      setError("Please fill in all fields.");
+      return;
+    }
+
+    setError("");
+
+    // Simulate form submission (you can replace this with actual API call)
+    try {
+      console.log(formData); // Replace with your form submission logic
+      // Reset form data
+      setFormData({
+        name: "",
+        surname: "",
+        email: "",
+        message: "",
+      });
+      setSuccess("Your message has been sent successfully!");
+    } catch (err) {
+      setError("There was an error sending your message. Please try again.");
+    }
   };
 
   return (
     <>
-      <Navbar />
-      <section className="min-h-screen bg-gradient-to-br from-white via-[#F7F3E9] to-white flex items-center justify-center px-4 pt-20 md:px-8">
-        <div className="bg-white rounded-2xl shadow-2xl p-6 sm:p-10 w-full max-w-lg space-y-8">
-          {/* Title */}
-          <h1 className="text-3xl md:text-4xl font-extrabold text-[#3E2723] text-center">
-            Get in Touch
-          </h1>
-          <p className="text-[#6D6D6D] text-center text-sm md:text-base">
-            We'd love to hear from you! Send us a message, and we'll respond as soon as possible.
-          </p>
+      <div className="min-h-screen flex flex-col items-center justify-center bg-white py-16 px-4 pt-36 lg:px-20">
+        <h2 className="text-[#14452F] text-sm font-bold uppercase mb-2 text-center">
+          Let's Spark a Conversation
+        </h2>
+        <h1 className="text-5xl lg:text-6xl font-bold text-[#3E2723] mb-6 text-center">
+          Get in Touch with Us
+        </h1>
+        <p className="text-center text-gray-600 mb-16 max-w-2xl">
+          We invite you to reach out with any inquiries regarding our luxurious
+          collections or to seek assistance in finding your perfect fragrance.
+          Your satisfaction is our top priority.
+        </p>
 
-          {/* Form */}
-          <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Name Input */}
-            <div className="relative">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleInputChange}
-                required
-                placeholder=" "
-                className="w-full px-4 py-3 border border-[#3E2723] rounded-lg focus:ring-2 focus:ring-[#3E2723] focus:outline-none text-[#3E2723] transition duration-300"
-              />
-              <label
-                htmlFor="name"
-                className="absolute top-0 left-3 px-1 bg-white transform -translate-y-1/2 text-sm text-[#6D6D6D]"
-              >
-                Your Name
-              </label>
-            </div>
+        <div className="flex flex-col lg:flex-row max-w-7xl w-full mx-auto bg-white shadow-lg">
+          {/* Left Side - Carousel */}
+          <div className="w-full lg:w-1/2 md:h-auto h-64 bg-gray-200 p-5 flex items-center justify-center relative overflow-hidden">
+      {images.map((src, index) => (
+        <img
+          key={index}
+          src={src}
+          alt={`Perfume ${index + 1}`}
+          className={`absolute w-full transition-opacity duration-1000 ease-in-out ${
+            index === activeIndex ? 'opacity-100' : 'opacity-0'
+          }`}
+        />
+      ))}
+    </div>
 
-            {/* Email Input */}
-            <div className="relative">
+          {/* Right Side - Form */}
+          <div className="w-full lg:w-1/2 bg-gray-100 p-10">
+            {error && <p className="text-red-500">{error}</p>}
+            {success && <p className="text-green-500">{success}</p>}
+            <form onSubmit={handleSubmit} className="space-y-8">
+              <div className="flex space-x-4">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="w-full px-5 py-4 text-black border-b-2 border-gray-300 focus:outline-none focus:border-[#3E2723] focus:ring-0 focus:border-b-2 focus:border-b-[#3E2723] text-lg"
+                />
+                
+              </div>
               <input
                 type="email"
-                id="email"
                 name="email"
+                placeholder="Email"
                 value={formData.email}
-                onChange={handleInputChange}
-                required
-                placeholder=" "
-                className="w-full px-4 py-3 border border-[#3E2723] rounded-lg focus:ring-2 focus:ring-[#3E2723] focus:outline-none text-[#3E2723] transition duration-300"
+                onChange={handleChange}
+                className="w-full px-5 py-4 text-black border-b-2 border-gray-300 focus:outline-none focus:border-[#3E2723] focus:ring-0 focus:border-b-2 focus:border-b-[#3E2723] text-lg"
               />
-              <label
-                htmlFor="email"
-                className="absolute top-0 left-3 px-1 bg-white transform -translate-y-1/2 text-sm text-[#6D6D6D]"
-              >
-                Your Email
-              </label>
-            </div>
-
-            {/* Message Input */}
-            <div className="relative">
               <textarea
-                id="message"
                 name="message"
+                placeholder="Message"
                 value={formData.message}
-                onChange={handleInputChange}
-                required
-                placeholder=" "
-                rows={4}
-                className="w-full px-4 py-3 border border-[#3E2723] rounded-lg focus:ring-2 focus:ring-[#3E2723] focus:outline-none text-[#3E2723] transition duration-300"
+                onChange={handleChange}
+                rows={5}
+                className="w-full px-5 py-4 text-black border-b-2 border-gray-300 focus:outline-none focus:ring-2 focus:border-[#3E2723]  focus:border-b-2 focus:border-b-[#3E2723] text-lg"
               />
-              <label
-                htmlFor="message"
-                className="absolute top-0 left-3 px-1 bg-white transform -translate-y-1/2 text-sm text-[#6D6D6D]"
+              <button
+                type="submit"
+                className="w-full py-4 bg-[#14452F] text-white font-bold text-lg hover:bg-[#0F3B26] transition duration-300"
               >
-                Your Message
-              </label>
-            </div>
-
-            {/* Submit Button */}
-            <button
-              type="submit"
-              className="w-full bg-[#3E2723] text-white py-3 rounded-lg shadow-md hover:bg-[#2C1D1A] transition duration-300"
-            >
-              Send Message
-            </button>
-          </form>
+                Send
+              </button>
+            </form>
+          </div>
         </div>
-      </section>
+      </div>
     </>
   );
 };
 
-export default ContactPage;
+export default Contact;

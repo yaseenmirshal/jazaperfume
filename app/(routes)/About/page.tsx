@@ -1,12 +1,12 @@
 // pages/about.tsx
+'use client'
 import React from "react";
-import Navbar from "@/app/Components/Navbar";
-import Footer from "@/app/Components/Footer";
+import { motion } from 'framer-motion';
 
 const AboutPage = () => {
   return (
     <>
-      <Navbar />
+
       <section className="min-h-screen bg-gradient-to-br from-white via-[#F7F3E9] to-white pt-36 py-12 border-y-2">
         <div className="container mx-auto px-4">
           {/* Main Heading */}
@@ -48,6 +48,51 @@ const AboutPage = () => {
             </div>
           </div>
 
+           {/* Highlight Features */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.2 }}
+        className="grid grid-cols-1 mt-14 mb-14 md:grid-cols-3 gap-8"
+      >
+        <div className="bg-white p-6  rounded-lg shadow-lg">
+          <h3 className="text-xl font-bold text-[#3e2723]">No Harmful Chemicals</h3>
+          <img src="./nochemi.jpg" alt="No Harmful Chemicals" className="mt-4 h-60 w-full object-cover rounded" />
+          <p className="text-[#5C5C5C] mt-2">
+            Our fragrances are free from harmful chemicals, ensuring safe and luxurious scents.
+          </p>
+        </div>
+        <div className="bg-white p-6 rounded-lg shadow-lg">
+          <h3 className="text-xl font-bold text-[#3e2723]">Sustainable Ingredients</h3>
+          <img src="./ingredients.jpg" alt="Sustainable Ingredients" className="mt-4 h-60 w-full object-cover rounded" />
+          <p className="text-[#5C5C5C] mt-2">
+            We use sustainable, eco-friendly ingredients to create unique fragrances that you can feel good about.
+          </p>
+        </div>
+        <div className="bg-white p-6 rounded-lg shadow-lg">
+          <h3 className="text-xl font-bold text-[#3e2723]">Cruelty-Free Products</h3>
+          <img src="./nature.jpg" alt="Cruelty-Free Products" className="mt-4 h-60 w-full object-cover rounded" />
+          <p className="text-[#5C5C5C] mt-2">
+            All our products are cruelty-free, ethically sourced, and produced without animal testing.
+          </p>
+        </div>
+      </motion.div>
+
+      {/* Animated Text Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.3 }}
+        className="text-center"
+      >
+        <h2 className="text-3xl md:text-4xl font-bold text-[#3e2723]">
+          A Fragrance for Every Moment
+        </h2>
+        <p className="mt-4 text-lg text-[#5C5C5C]">
+          Whether you're looking for a subtle daytime scent or a bold evening perfume, Jaza Perfumes has something for every occasion.
+        </p>
+      </motion.div>
+
           {/* Mission Section */}
           <div className="mt-16">
             <h2 className="text-3xl font-semibold text-center text-[#3E2723] mb-4">
@@ -68,8 +113,40 @@ const AboutPage = () => {
             </p>
           </div>
         </div>
+
+
+        <div className="container mx-auto py-8 px-4 sm:px-8">
+  <div className="bg-gray-100 w-full max-w-4xl mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="flex flex-col items-center md:items-start justify-center">
+        <img
+          src="ingre.png"
+          alt="Perfume ingredients"
+          className="w-full max-w-xs h-auto object-cover" // Image will adjust to screen size
+        />
+      </div>
+      <div className="flex w-full md:w-80 flex-col justify-center md:items-start items-center">
+        <h2 className="text-2xl md:text-3xl text-black font-bold mb-4">
+          Luxury You Can Trust
+        </h2>
+        <p className="text-base md:text-start text-center md:text-lg text-black mb-4">
+          Our perfumes are designed to provide an unforgettable olfactory experience, made from premium quality ingredients that ensure longevity and richness.
+        </p>
+        <h3 className="text-xl md:text-2xl text-black font-bold mb-4">
+          A Symphony of Scents
+        </h3>
+        <p className="text-base md:text-start text-center md:text-lg text-black">
+          Each perfume is a carefully composed symphony, artfully blending notes to create a unique and captivating fragrance profile.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
       </section>
-      <Footer/>
+   
     </>
   );
 };

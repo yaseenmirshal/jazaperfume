@@ -67,7 +67,7 @@ const Cart = () => {
 
   return (
     <>
-    <Navbar/>
+  
     <div className="min-h-screen flex flex-col lg:flex-row bg-white p-4 lg:p-8 pt-8 lg:pt-28">
 
       {/* Back to Store Button */}

@@ -8,8 +8,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        // raleway: ['Raleway', 'sans-serif'],
-        kurale: ['Kurale', 'sans-serif'],
+        roboto: ['var(--font-roboto)', 'sans-serif'],
+        playfair: ['var(--font-playfair_display)', 'serif'],
+        montserrat: ['var(--font-montserrat)', 'sans-serif'],
+        lora: ['var(--font-lora)', 'serif'],
+        poppins: ['var(--font-poppins)', 'sans-serif'],
+        openSans: ['var(--font-open_sans)', 'sans-serif'],
+        lato: ['var(--font-lato)', 'sans-serif'],
       },
     },
   },

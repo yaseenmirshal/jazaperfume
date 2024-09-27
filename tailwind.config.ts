@@ -15,7 +15,7 @@ const config: Config = {
       },
       fontFamily: {
         // Add your custom fonts here
-        roboto: ['Roboto', 'sans-serif'],
+        roboto: ['var(--font-roboto)', 'sans-serif'],
         creto: ['Creto', 'sans-serif'],
         playfair: ['"Playfair Display"', 'serif'],
         // Add more fonts as needed
@@ -32,3 +32,4 @@ const config: Config = {
   plugins: [],
 };
 export default config;
+

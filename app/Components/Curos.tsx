@@ -113,9 +113,13 @@ const perfumes = [
                   <p className="text-gray-500">{perfume.category}</p>
                 </div>
                 <div className="-mt-5 flex justify-end">
+          
+                  <a href="./Store">
                   <button className="bg-zinc-500 text-[#ffffff] py-2 px-4 rounded-full hover:bg-[#DAA520] hover:text-slate-950 transition duration-300">
                     Shop Now
                   </button>
+                  </a>
+               
                 </div>
               </div>
             </div>
