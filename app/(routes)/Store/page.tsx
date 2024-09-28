@@ -225,9 +225,9 @@ function Page() {
                           ₹{product.originalPrice}
                         </span>
                       </p>
-                      <span className="bg-blue-600 text-white text-xs md:text-sm px-2 py-1 rounded-full">
+                      {/* <span className="bg-blue-600 text-white text-xs md:text-sm px-2 py-1 rounded-full">
                         {product.discount}
-                      </span>
+                      </span> */}
                     </div>
                   </div>
                 </div>
