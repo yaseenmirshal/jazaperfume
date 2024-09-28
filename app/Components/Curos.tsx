@@ -94,41 +94,38 @@ const perfumes = [
   };
 
   return (
-    <> <div className='w-full  bg-[#F7F3E9]'>
-    <div className="container mx-auto py-0 bg-[#F7F3E9] w-full "> 
-     
-      <Slider {...settings}>
-        {perfumes.map((perfume) => (
-         
-          <div key={perfume.id} className="p-4 pb-10">
-            <div className="bg-[#333333] rounded-xl overflow-hidden">
-              <div
-                style={{ backgroundImage: `url(${perfume.image})` }}
-                className="bg-cover bg-center h-60"
-              ></div>
-              <div className="p-6">
-                <h5 className="text-xl font-semibold text-richGold">{perfume.name}</h5>
-                <p className="text-lg text-gray-300">{perfume.price}</p>
-                <div className='flex float-left w-32 h-5'>
-                  <p className="text-gray-500">{perfume.category}</p>
-                </div>
-                <div className="-mt-5 flex justify-end">
-          
-                  <a href="./Store">
-                  <button className="bg-zinc-500 text-[#ffffff] py-2 px-4 rounded-full hover:bg-[#DAA520] hover:text-slate-950 transition duration-300">
+    <> 
+    <div className='w-full bg-[#F7F3E9]'>
+  <div className="container mx-auto py-0 bg-[#F7F3E9] w-full">
+    <Slider {...settings}>
+      {perfumes.map((perfume) => (
+        <div key={perfume.id} className="p-4 pb-10">
+          <div className="bg-[#3e2723] rounded-xl overflow-hidden">
+            <div
+              style={{ backgroundImage: `url(${perfume.image})` }}
+              className="bg-cover bg-center h-60"
+            ></div>
+            <div className="p-6">
+              <h5 className="text-xl font-semibold text-[#DAA520]">{perfume.name}</h5>
+              <p className="text-lg text-[#F7F3E9]">{perfume.price}</p>
+              <div className='flex float-left w-32 h-5'>
+                <p className="text-[#f0e8d9]">{perfume.category}</p>
+              </div>
+              <div className="-mt-5 flex justify-end">
+                <a href="./Store">
+                  <button className="bg-[#3e2723] text-[#F7F3E9] py-2 px-4 rounded-full hover:bg-[#DAA520] hover:text-[#3e2723] transition duration-300">
                     Shop Now
                   </button>
-                  </a>
-               
-                </div>
+                </a>
               </div>
             </div>
           </div>
-          
-        ))}
-      </Slider>
+        </div>
+      ))}
+    </Slider>
+  </div>
 </div>
-    </div>
+
     </>
   );
 };

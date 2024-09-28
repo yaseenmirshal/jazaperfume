@@ -45,7 +45,7 @@ function Page() {
           </div>
 
           {/* Right Side Sign Up Form */}
-          <div className="w-full lg:w-1/3 bg-white rounded-lg shadow-lg p-8">
+          <div className="w-full mt-20 md:mt-0 lg:w-1/3 bg-white rounded-lg shadow-lg p-8">
             <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
               Sign Up
             </h2>

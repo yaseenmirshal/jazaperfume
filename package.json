@@ -18,6 +18,7 @@
     "@material-tailwind/react": "^2.1.9",
     "@mui/icons-material": "^5.16.6",
     "@mui/material": "^5.16.5",
+    "aos": "^2.3.4",
     "apexcharts": "^3.51.0",
     "flatpickr": "^4.6.13",
     "flowbite-react": "^0.10.1",
@@ -35,6 +36,7 @@
     "swiper": "^11.1.4"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

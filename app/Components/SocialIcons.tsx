@@ -1,8 +1,47 @@
 'use client'
+import { useEffect,useState } from 'react';
 import Curostop from "./Curostop"
 import Curos from "./Curos"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 const SocialIcons = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 1200, once: true });
+  }, []);
+
+  const quotes = [
+    'Perfume is the key to our memories.',
+    'Elegance is the only beauty that never fades.',
+    'A fragrance defines your aura.',
+    'Luxury is in each detail.',
+  ];
+
+  const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
+
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+
+    const interval = setInterval(() => {
+      setCurrentQuoteIndex((prevIndex) =>
+        prevIndex === quotes.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [quotes.length]);
+
+  const timelineData = [
+    { year: '2021', description: 'The idea for Jaza Perfumes was born.' },
+    { year: '2022', description: 'First collection launched with exquisite artisan blends.' },
+    { year: '2023', description: 'Recognized for long-lasting, premium-quality fragrances.' },
+    { year: '2024', description: 'Expanded into global markets, winning numerous awards.' },
+  ];
+
+
   return (
     <>
 
@@ -91,7 +130,79 @@ const SocialIcons = () => {
           </div>
         </div>
       </div>
+
+
+<div className="w-full  bg-[#F7F3E9]">
+      <div className="container   mx-auto py-16 px-4 md:px-0">
+      <h2 className="text-4xl font-bold text-center mb-8 text-[#3e2723]">Our Unique Features</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div data-aos="fade-up" className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+          <img src="/greenbo.png" alt="High Quality" className="w-full mb-4" />
+          <h3 className="text-2xl font-bold text-[#3e2723] mb-2">High Quality</h3>
+          <p className="text-gray-700">Made from the finest ingredients to ensure an unforgettable olfactory experience.</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200" className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+          <img src="/waterfall.png" alt="Long Lasting" className="w-full mb-4" />
+          <h3 className="text-2xl font-bold text-[#3e2723] mb-2">Long Lasting</h3>
+          <p className="text-gray-700">Enjoy fragrances that linger all day, creating an impression that lasts.</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="400" className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+          <img src="/artist.png" alt="Artisan Blends" className="w-full mb-4" />
+          <h3 className="text-2xl font-bold text-[#3e2723] mb-2">Artisan Blends</h3>
+          <p className="text-gray-700">Crafted by master perfumers, blending the perfect notes for an exquisite scent.</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+{/* Animated quote */}
+<div className="bg-[#f7f3e9]  py-16 text-center">
+      <h2 className="text-3xl md:text-4xl  font-bold text-[#3e2723] mb-8" data-aos="fade-in">
+        Inspiration Behind Our Scents
+      </h2>
+      <p
+        className="text-2xl font-semibold text-[#3e2723] transition-opacity duration-1000"
+        data-aos="fade-up"
+        key={currentQuoteIndex}
+      >
+        {quotes[currentQuoteIndex]}
+      </p>
+    </div>
+      
       <Curos/>
+
+    {/* timeline sections */}
+    <div className='w-full  bg-[#f7f3e9]'>
+    <div className="container mx-auto py-16 px-4 md:px-0">
+      <h2 className="text-4xl font-bold text-center mb-8 text-[#3e2723]">
+        Our Journey
+      </h2>
+      <div className="relative">
+        <div className="absolute h-full w-1 bg-[#3e2723] left-1/2 transform -translate-x-1/2"></div>
+        <div className="space-y-12">
+          {timelineData.map((item, index) => (
+            <div
+              key={index}
+              data-aos="fade-right"
+              className={`flex items-center justify-${index % 2 === 0 ? 'start' : 'end'}`}
+            >
+              <div
+                className="w-1/2 p-6 bg-white rounded-lg shadow-lg text-[#3e2723]"
+                style={{
+                  animationDelay: `${index * 300}ms`,
+                }}
+              >
+                <h3 className="text-2xl font-bold mb-2">{item.year}</h3>
+                <p className="text-lg">{item.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+    </div>
+
+
       <div className='w-full h-auto flex'>
        
         {/* Men Card */}

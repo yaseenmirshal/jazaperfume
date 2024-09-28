@@ -183,7 +183,7 @@ function Page() {
       <div className="flex h-screen overflow-hidden">
         {/* Sidebar */}
         <Sidebar/>
-        <Navbar/>
+        
           {/* Products Section */}
           <div className="flex-1 bg-gray-100 p-4 pt-28 overflow-auto">
       <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 md:p-4">
