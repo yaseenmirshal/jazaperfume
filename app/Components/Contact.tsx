@@ -4,7 +4,7 @@ import { Carousel } from "react-responsive-carousel"; // You can use any carouse
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
-const Contact = () => {
+const Contactco = () => {
   const [formData, setFormData] = useState({
     name: "",
     surname: "",
@@ -73,7 +73,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="min-h-screen flex flex-col items-center justify-center bg-white py-16 px-4 pt-36 lg:px-20">
+      <div id="contact" className="min-h-screen flex flex-col items-center justify-center bg-white py-16 px-4 pt-36 lg:px-20">
         <h2 className="text-[#14452F] text-sm font-bold uppercase mb-2 text-center">
           Let's Spark a Conversation
         </h2>
@@ -147,4 +147,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contactco;

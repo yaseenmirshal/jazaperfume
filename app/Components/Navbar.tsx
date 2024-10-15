@@ -41,6 +41,10 @@ const Navbar = () => {
     setCartItems((prevItems) => prevItems.filter((item) => item.id !== id));
   };
 
+  const handleLinkClick = () => {
+    setIsOpen(false); // Close the menu when a link is clicked
+  };
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -60,7 +64,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center max-h-20">
             <div className="flex items-center">
               <Link href="/" legacyBehavior>
-                <a className="flex items-center">
+                <a className="flex items-center" onClick={handleLinkClick}>
                   <img className="h-14 mt-5 mb-5" src="./jaza white.png" alt="Jaza Perfumes Logo" />
                 </a>
               </Link>
@@ -71,12 +75,12 @@ const Navbar = () => {
                   HOME
                 </a>
               </Link>
-              <Link href="/About" legacyBehavior>
+              <Link href="#about" legacyBehavior>
                 <a className="py-4 px-2 text-lightGray font-semibold hover:text-richGold transition duration-300" style={{ color: '#000000' }}>
                   ABOUT
                 </a>
               </Link>
-              <Link href="/Contact" legacyBehavior>
+              <Link href="#contact" legacyBehavior>
                 <a className="py-4 px-2 text-lightGray font-semibold hover:text-richGold transition duration-300" style={{ color: '#000000' }}>
                   CONTACT
                 </a>
@@ -86,11 +90,7 @@ const Navbar = () => {
                   STORE
                 </a>
               </Link>
-              <Link href="/" legacyBehavior>
-                <a className="py-4 px-2 text-lightGray font-semibold hover:text-richGold transition duration-300" style={{ color: '#000000' }}>
-                  CATEGORIES
-                </a>
-              </Link>
+              
             </div>
             <div className="hidden md:flex items-center space-x-9 mr-5">
               <Link href="/Liked">
@@ -126,30 +126,28 @@ const Navbar = () => {
 
         <div className={`md:hidden flex flex-col ${isOpen ? 'block' : 'hidden'}`} style={{ backgroundColor: '#ffffff' }}>
           <Link href="/" legacyBehavior>
-            <a className="block text-center text-sm px-2 py-4 text-ivory font-semibold" style={{ color: '#000000' }}>
+            <a className="block text-center text-sm px-2 py-4 text-ivory font-semibold" style={{ color: '#000000' }} onClick={handleLinkClick}>
               HOME
             </a>
           </Link>
-          <Link href="/About" legacyBehavior>
-            <a className="block text-center text-sm px-2 py-4 hover:text-richGold transition duration-300" style={{ color: '#000000' }}>
+          <Link href="#about" legacyBehavior>
+            <a className="block text-center text-sm px-2 py-4 hover:text-richGold transition duration-300" style={{ color: '#000000' }} onClick={handleLinkClick}>
               ABOUT
             </a>
           </Link>
           <Link href="/Store" legacyBehavior>
-            <a className="block text-center text-sm px-2 py-4 hover:text-richGold transition duration-300" style={{ color: '#000000' }}>
+            <a className="block text-center text-sm px-2 py-4 hover:text-richGold transition duration-300" style={{ color: '#000000' }} onClick={handleLinkClick}>
               STORE
             </a>
           </Link>
-          <Link href="/Contact" legacyBehavior>
-            <a className="block text-center text-sm px-2 py-4 hover:text-richGold transition duration-300" style={{ color: '#000000' }}>
+          <Link href="#contact" legacyBehavior>
+            <a className="block text-center text-sm px-2 py-4 hover:text-richGold transition duration-300" style={{ color: '#000000' }} onClick={handleLinkClick}>
               CONTACT
             </a>
           </Link>
           <div className="flex items-center justify-around py-4">
             <FontAwesomeIcon icon={faHeart} className="text-black hover:text-richGold cursor-pointer" />
-           
-              <FontAwesomeIcon icon={faShoppingCart} className="text-black hover:text-richGold cursor-pointer" onClick={() => setIsCartOpen(true)}  />
-        
+            <FontAwesomeIcon icon={faShoppingCart} className="text-black hover:text-richGold cursor-pointer" onClick={() => setIsCartOpen(true)} />
             <Link href="/Signup">
               <FontAwesomeIcon icon={faUser} className="text-black hover:text-richGold cursor-pointer" />
             </Link>
@@ -190,7 +188,7 @@ const Navbar = () => {
                     >
                       -
                     </button>
-                    <span style={{ color: '#000000' }}>{item.quantity}</span>
+                    <span>{item.quantity}</span>
                     <button
                       onClick={() => increaseQuantity(item.id)}
                       style={{
@@ -205,29 +203,27 @@ const Navbar = () => {
                   </div>
                   <FontAwesomeIcon
                     icon={faTrash}
-                    className="text-gray-300 hover:text-red-700 cursor-pointer ml-2"
+                    className="text-red-500 hover:text-red-700 cursor-pointer"
                     onClick={() => removeItem(item.id)}
                   />
                 </div>
               ))}
             </div>
-
-            <div className="mt-8">
-            <a href="./Cart">
-              <button
-              className='w-full'
-                style={{
-                  backgroundColor: '#000000',
-                  color: '#ffffff',
-                  padding: '10px ',
-                
-                  borderRadius: '0', // Square shape
-                }}
-              >
-                Checkout
-              </button>
-              </a>
+            {/* Total Price */}
+            <div className="flex justify-between items-center mt-6">
+              <span className="text-black text-xl font-semibold">Total</span>
+              <span className="text-black text-xl font-semibold">
+                ${cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0)}
+              </span>
             </div>
+            {/* Checkout Button */}
+            <button
+              className="w-full py-3 mt-6 text-white font-semibold"
+              style={{ backgroundColor: '#000000' }}
+              onClick={() => console.log('Proceed to checkout')}
+            >
+              Proceed to Checkout
+            </button>
           </div>
         </div>
       )}

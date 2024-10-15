@@ -4,8 +4,8 @@ import Curostop from "./Curostop"
 import Curos from "./Curos"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
-
+import About from './About';
+import Contactco from './Contact';
 
 const SocialIcons = () => {
 
@@ -40,8 +40,6 @@ const SocialIcons = () => {
     { year: '2023', description: 'Recognized for long-lasting, premium-quality fragrances.' },
     { year: '2024', description: 'Expanded into global markets, winning numerous awards.' },
   ];
-
-
   return (
     <>
 
@@ -171,6 +169,45 @@ const SocialIcons = () => {
       
       <Curos/>
 
+
+    <div className="w-full bg-[#f7f3e9] py-8 p-8">
+  <div className="max-w-5xl mx-auto w-full h-auto flex flex-col md:flex-row gap-10">
+    
+    {/* Men Card */}
+    <div
+      className="relative border-none flex w-full md:w-1/2 h-96 hover:cursor-pointer bg-white  shadow-lg transition-shadow hover:shadow-2xl"
+      data-aos="fade-right"
+    >
+      <div className="relative w-full h-full overflow-hidden ">
+        <div
+          style={{ backgroundImage: `url('https://i.pinimg.com/736x/2f/da/4b/2fda4bb2f061b21b541d5bcd2304ce62.jpg')` }}
+          className="w-full h-full bg-cover bg-center transform transition-transform duration-500 hover:scale-110 rounded-lg"
+        ></div>
+      </div>
+      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent p-4 flex justify-left items-center ">
+        <h3 className="text-white text-lg font-bold font-serif">Men</h3>
+      </div>
+    </div>
+
+    {/* Women Card */}
+    <div
+      className="relative border-none flex w-full md:w-1/2 h-96 hover:cursor-pointer bg-white rounded-lg shadow-lg transition-shadow hover:shadow-2xl"
+      data-aos="fade-left"
+    >
+      <div className="relative w-full h-full overflow-hidden">
+        <div
+          style={{ backgroundImage: `url('https://perfumania.com/cdn/shop/articles/Best_Versace_Perfumes_for_Women_in_2024.webp?v=1715884495')` }}
+          className="w-full h-full bg-cover bg-center transform transition-transform duration-500 hover:scale-110 rounded-lg"
+        ></div>
+      </div>
+      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent p-4 flex justify-left items-center rounded-b-lg">
+        <h3 className="text-white text-lg font-bold font-serif">Women</h3>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
     {/* timeline sections */}
     <div className='w-full  bg-[#f7f3e9]'>
     <div className="container mx-auto py-16 px-4 md:px-0">
@@ -202,39 +239,9 @@ const SocialIcons = () => {
     </div>
     </div>
 
-
-      <div className='w-full h-auto flex'>
-       
-        {/* Men Card */}
-    
-        <div className='relative border-none flex w-1/2 h-96 hover:cursor-pointer  bg-white'>
-          <div className='relative w-full h-full overflow-hidden'>
-            <div
-              style={{ backgroundImage: `url('https://i.pinimg.com/736x/2f/da/4b/2fda4bb2f061b21b541d5bcd2304ce62.jpg')` }}
-              className='w-full h-full bg-cover bg-center transform transition-transform duration-500 hover:scale-105'
-            ></div>
-          </div>
-          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent p-4 flex justify-right items-center">
-            <h3 className="text-white text-lg font-bold font-serif">Men</h3>
-          </div>
-        </div>
-    
-        {/* Women Card */}
-       
-        <div className='relative flex w-1/2 h-96 hover:cursor-pointer  bg-white'>
-          <div className='relative w-full h-full overflow-hidden'>
-            <div
-              style={{ backgroundImage: `url('https://perfumania.com/cdn/shop/articles/Best_Versace_Perfumes_for_Women_in_2024.webp?v=1715884495')` }}
-              className='w-full h-full bg-cover bg-center transform transition-transform duration-500 hover:scale-105'
-            ></div>
-          </div>
-          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent p-4 flex justify-right items-center">
-            <h3 className="text-white text-lg font-bold font-serif">Women</h3>
-          </div>
-        </div>
-      </div>
-
-
+      <About/>
+      <Contactco/>
+      
     </>
   );
 };

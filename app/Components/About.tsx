@@ -3,11 +3,11 @@
 import React from "react";
 import { motion } from 'framer-motion';
 
-const AboutPage = () => {
+const About = () => {
   return (
     <>
 
-      <section className="min-h-screen bg-gradient-to-br from-white via-[#F7F3E9] to-white pt-36 py-12 border-y-2">
+      <section id="about" className="min-h-screen bg-gradient-to-br from-white via-[#F7F3E9] to-white pt-36 py-12 border-y-2">
         <div className="container mx-auto px-4">
           {/* Main Heading */}
           <div className="text-center mb-16">
@@ -151,4 +151,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default About;

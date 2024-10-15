@@ -100,7 +100,7 @@ const perfumes = [
     <Slider {...settings}>
       {perfumes.map((perfume) => (
         <div key={perfume.id} className="p-4 pb-10">
-          <div className="bg-[#3e2723] rounded-xl overflow-hidden">
+          <div className="bg-[#1e1e1e] rounded-xl overflow-hidden">
             <div
               style={{ backgroundImage: `url(${perfume.image})` }}
               className="bg-cover bg-center h-60"
@@ -113,7 +113,7 @@ const perfumes = [
               </div>
               <div className="-mt-5 flex justify-end">
                 <a href="./Store">
-                  <button className="bg-[#3e2723] text-[#F7F3E9] py-2 px-4 rounded-full hover:bg-[#DAA520] hover:text-[#3e2723] transition duration-300">
+                  <button className="bg-gray-700 text-[#F7F3E9] py-2 px-4 rounded-full hover:bg-[#DAA520] hover:text-[#3e2723] transition duration-300">
                     Shop Now
                   </button>
                 </a>
