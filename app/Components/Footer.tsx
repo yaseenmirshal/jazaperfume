@@ -115,7 +115,12 @@ function Footer() {
                         <input type="email" name="email" id="email" placeholder="Enter your email" className="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600" />
                     </div>
 
-                    <button type="submit" className="inline-flex items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:bg-blue-700">Subscribe</button>
+                    <button type="submit" className="inline-flex items-center justify-center px-6 py-4 mt-3 font-semibold text-[#3E2723] transition-all duration-200 bg-[#F5F5DC] border border-[#3E2723] hover:bg-[#E0D8B0] focus:bg-[#D1C5A1] rounded-md">
+                     Subscribe
+                     </button>
+
+                
+
                 </form>
             </div>
         </div>

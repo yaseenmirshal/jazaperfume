@@ -170,12 +170,12 @@ const SocialIcons = () => {
       <Curos/>
 
 
-    <div className="w-full bg-[#f7f3e9] py-8 p-8">
-  <div className="max-w-5xl mx-auto w-full h-auto flex flex-col md:flex-row gap-10">
+    <div className="w-full bg-[#f7f3e9] py-20 p-9">
+  <div className="max-w-5xl mx-auto w-full h-auto flex flex-col md:flex-row md:gap-20 gap-10">
     
     {/* Men Card */}
     <div
-      className="relative border-none flex w-full md:w-1/2 h-96 hover:cursor-pointer bg-white  shadow-lg transition-shadow hover:shadow-2xl"
+      className="relative border-none flex w-full md:w-1/2 h-96 hover:cursor-pointer rounded-lg bg-white  shadow-lg transition-shadow hover:shadow-2xl"
       data-aos="fade-right"
     >
       <div className="relative w-full h-full overflow-hidden ">
@@ -184,14 +184,14 @@ const SocialIcons = () => {
           className="w-full h-full bg-cover bg-center transform transition-transform duration-500 hover:scale-110 rounded-lg"
         ></div>
       </div>
-      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent p-4 flex justify-left items-center ">
+      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent p-4 flex justify-left items-center rounded-b-lg">
         <h3 className="text-white text-lg font-bold font-serif">Men</h3>
       </div>
     </div>
 
     {/* Women Card */}
     <div
-      className="relative border-none flex w-full md:w-1/2 h-96 hover:cursor-pointer bg-white rounded-lg shadow-lg transition-shadow hover:shadow-2xl"
+      className="relative border-none flex w-full md:w-1/2 h-96 hover:cursor-pointer rounded-lg bg-white  shadow-lg transition-shadow hover:shadow-2xl"
       data-aos="fade-left"
     >
       <div className="relative w-full h-full overflow-hidden">
