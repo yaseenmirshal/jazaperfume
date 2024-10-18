@@ -1,18 +1,26 @@
-'use client'
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faHeart, faShoppingCart, faTimes, faTrash } from '@fortawesome/free-solid-svg-icons';
+"use client";
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { ShoppingCartIcon } from "@heroicons/react/outline"; 
+import {
+  faUser,
+  faHeart,
+  faShoppingCart,
+  faShoppingBag,
+  faTimes,
+  faTrash,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
-  const [isCartOpen, setIsCartOpen] = useState(false); // Cart modal state
+  const [isCartOpen, setIsCartOpen] = useState(false);
   const [cartItems, setCartItems] = useState([
-    { id: 1, name: 'Musk Rijal', price: 50, quantity: 1, img: '/luxury.jpeg' },
-    { id: 2, name: 'Velvet Oud', price: 70, quantity: 2, img: '/gold.jpeg' },
-    { id: 3, name: 'Red Spain', price: 60, quantity: 1, img: '/redbo.jpeg' },
+    { id: 1, name: "Musk Rijal", price: 50, quantity: 1, img: "/luxury.jpeg" },
+    { id: 2, name: "Velvet Oud", price: 70, quantity: 2, img: "/gold.jpeg" },
+    { id: 3, name: "Red Spain", price: 60, quantity: 1, img: "/redbo.jpeg" },
   ]);
 
   const handleScroll = () => {
@@ -32,7 +40,9 @@ const Navbar = () => {
   const decreaseQuantity = (id: number) => {
     setCartItems((prevItems) =>
       prevItems.map((item) =>
-        item.id === id && item.quantity > 1 ? { ...item, quantity: item.quantity - 1 } : item
+        item.id === id && item.quantity > 1
+          ? { ...item, quantity: item.quantity - 1 }
+          : item
       )
     );
   };
@@ -42,18 +52,16 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos, visible]);
 
   return (
     <>
       <header
-        className={`fixed top-0 w-full shadow-lg transition transform ${
-          visible ? 'translate-y-0' : '-translate-y-full'
-        } duration-500 ease-in-out z-50`}
+        className={`fixed top-0 w-full shadow-lg transition transform translate-y-0 duration-500 ease-in-out z-50`}
         style={{
-          backgroundColor: '#ffffff',
+          backgroundColor: "#ffffff",
         }}
       >
         <div className="mx-auto px-4 max-h-20">
@@ -61,36 +69,58 @@ const Navbar = () => {
             <div className="flex items-center">
               <Link href="/" legacyBehavior>
                 <a className="flex items-center">
-                  <img className="h-14 mt-5 mb-5" src="./jaza white.png" alt="Jaza Perfumes Logo" />
+                  <img
+                    className="h-14 mt-5 mb-5"
+                    src="./jaza white.png"
+                    alt="Jaza Perfumes Logo"
+                  />
                 </a>
               </Link>
             </div>
             <div className="hidden md:flex justify-center flex-grow space-x-10 max-h-20">
               <Link href="/" legacyBehavior>
-                <a className="py-4 px-2 text-ivory border-b-4 border-black font-semibold" style={{ color: '#000000' }}>
+                <a
+                  className="py-4 px-2 text-ivory border-b-4 border-black font-semibold"
+                  style={{ color: "#000000" }}
+                  onClick={() => setIsOpen(false)} // Close the menu
+                >
                   HOME
                 </a>
               </Link>
               <Link href="#about" legacyBehavior>
-                <a className="py-4 px-2 text-lightGray font-semibold hover:text-richGold transition duration-300" style={{ color: '#000000' }}>
+                <a
+                  className="py-4 px-2 text-lightGray font-semibold hover:text-richGold transition duration-300"
+                  style={{ color: "#000000" }}
+                  onClick={() => setIsOpen(false)} // Close the menu
+                >
                   ABOUT
                 </a>
               </Link>
               <Link href="#contact" legacyBehavior>
-                <a className="py-4 px-2 text-lightGray font-semibold hover:text-richGold transition duration-300" style={{ color: '#000000' }}>
+                <a
+                  className="py-4 px-2 text-lightGray font-semibold hover:text-richGold transition duration-300"
+                  style={{ color: "#000000" }}
+                  onClick={() => setIsOpen(false)} // Close the menu
+                >
                   CONTACT
                 </a>
               </Link>
               <Link href="/Store" legacyBehavior>
-                <a className="py-4 px-2 text-lightGray font-semibold hover:text-richGold transition duration-300" style={{ color: '#000000' }}>
+                <a
+                  className="py-4 px-2 text-lightGray font-semibold hover:text-richGold transition duration-300"
+                  style={{ color: "#000000" }}
+                  onClick={() => setIsOpen(false)} // Close the menu
+                >
                   STORE
                 </a>
               </Link>
-              
             </div>
             <div className="hidden md:flex items-center space-x-9 mr-5">
               <Link href="/Liked">
-                <FontAwesomeIcon icon={faHeart} className="text-black hover:text-richGold cursor-pointer" />
+                <FontAwesomeIcon
+                  icon={faHeart}
+                  className="text-black hover:text-richGold cursor-pointer"
+                />
               </Link>
               <FontAwesomeIcon
                 icon={faShoppingCart}
@@ -98,12 +128,25 @@ const Navbar = () => {
                 onClick={() => setIsCartOpen(true)} // Open the cart modal
               />
               <Link href="/Signup">
-                <FontAwesomeIcon icon={faUser} className="text-black hover:text-richGold cursor-pointer" />
+                <FontAwesomeIcon
+                  icon={faUser}
+                  className="text-black hover:text-richGold cursor-pointer"
+                />
               </Link>
             </div>
 
             <div className="md:hidden flex items-center">
-              <button className="outline-none mobile-menu-button" onClick={() => setIsOpen(!isOpen)}>
+            <div className="md:hidden flex items-center">
+  <Link href="/Store" legacyBehavior>
+    <a className="p-4 mr-4 hover:text-richGold transition duration-300" onClick={() => setIsOpen(false)}>
+      <FontAwesomeIcon icon={faShoppingBag} className="text-black text-lg" />
+    </a>
+  </Link>
+</div>
+              <button
+                className="outline-none mobile-menu-button"
+                onClick={() => setIsOpen(!isOpen)}
+              >
                 <svg
                   className="w-6 h-6 text-slate-950 hover:text-richGold"
                   fill="none"
@@ -120,34 +163,54 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className={`md:hidden flex flex-col ${isOpen ? 'block' : 'hidden'}`} style={{ backgroundColor: '#ffffff' }}>
+        <div
+          className={`md:hidden flex flex-col ${isOpen ? "block" : "hidden"}`}
+          style={{ backgroundColor: "#ffffff" }}
+        >
           <Link href="/" legacyBehavior>
-            <a className="block text-center text-sm px-2 py-4 text-ivory font-semibold" style={{ color: '#000000' }}>
+            <a
+              className="block text-center text-sm px-2 py-4 text-ivory font-semibold"
+              style={{ color: "#000000" }}
+              onClick={() => setIsOpen(false)} // Close the menu
+            >
               HOME
             </a>
           </Link>
-          <Link href="about" legacyBehavior>
-            <a className="block text-center text-sm px-2 py-4 hover:text-richGold transition duration-300" style={{ color: '#000000' }}>
+          <Link href="#about" legacyBehavior>
+            <a
+              className="block text-center text-sm px-2 py-4 hover:text-richGold transition duration-300"
+              style={{ color: "#000000" }}
+              onClick={() => setIsOpen(false)} // Close the menu
+            >
               ABOUT
             </a>
           </Link>
-          <Link href="/Store" legacyBehavior>
-            <a className="block text-center text-sm px-2 py-4 hover:text-richGold transition duration-300" style={{ color: '#000000' }}>
-              STORE
-            </a>
-          </Link>
           <Link href="#contact" legacyBehavior>
-            <a className="block text-center text-sm px-2 py-4 hover:text-richGold transition duration-300" style={{ color: '#000000' }}>
+            <a
+              className="block text-center text-sm px-2 py-4 hover:text-richGold transition duration-300"
+              style={{ color: "#000000" }}
+              onClick={() => setIsOpen(false)} // Close the menu
+            >
               CONTACT
             </a>
           </Link>
           <div className="flex items-center justify-around py-4">
-            <FontAwesomeIcon icon={faHeart} className="text-black hover:text-richGold cursor-pointer" />
-           
-              <FontAwesomeIcon icon={faShoppingCart} className="text-black hover:text-richGold cursor-pointer" onClick={() => setIsCartOpen(true)}  />
-        
+            <FontAwesomeIcon
+              icon={faHeart}
+              className="text-black hover:text-richGold cursor-pointer"
+              onClick={() => setIsOpen(false)} // Close the menu
+            />
+            <FontAwesomeIcon
+              icon={faShoppingCart}
+              className="text-black hover:text-richGold cursor-pointer"
+              onClick={() => setIsCartOpen(true)}
+            />
             <Link href="/Signup">
-              <FontAwesomeIcon icon={faUser} className="text-black hover:text-richGold cursor-pointer" />
+              <FontAwesomeIcon
+                icon={faUser}
+                className="text-black hover:text-richGold cursor-pointer"
+                onClick={() => setIsOpen(false)} // Close the menu
+              />
             </Link>
           </div>
         </div>
@@ -165,65 +228,25 @@ const Navbar = () => {
                 onClick={() => setIsCartOpen(false)}
               />
             </div>
-            {/* Cart Items */}
-            <div className="flex flex-col space-y-4">
-              {cartItems.map((item) => (
-                <div key={item.id} className="flex items-center justify-between">
-                  <img src={item.img} alt={item.name} className="w-16 h-16 object-cover" />
-                  <div className="flex-1 ml-4">
-                    <p className="text-black">{item.name}</p>
-                    <span className="text-gray-500">${item.price * item.quantity}</span> {/* Multiply price by quantity */}
+            {cartItems.map((item) => (
+              <div key={item.id} className="flex items-center justify-between mb-4">
+                <div className="flex items-center">
+                  <img src={item.img} alt={item.name} className="h-16 w-16 mr-4" />
+                  <div>
+                    <p className="text-lg font-semibold">{item.name}</p>
+                    <p className="text-sm text-gray-600">₹{item.price}</p>
+                    <div className="flex items-center mt-2">
+                      <button onClick={() => decreaseQuantity(item.id)}>-</button>
+                      <span className="mx-2">{item.quantity}</span>
+                      <button onClick={() => increaseQuantity(item.id)}>+</button>
+                    </div>
                   </div>
-                  <div className="flex items-center space-x-2">
-                    <button
-                      onClick={() => decreaseQuantity(item.id)}
-                      style={{
-                        backgroundColor: '#f0f0f0',
-                        color: '#000000',
-                        padding: '4px 8px',
-                        borderRadius: '4px',
-                      }}
-                    >
-                      -
-                    </button>
-                    <span style={{ color: '#000000' }}>{item.quantity}</span>
-                    <button
-                      onClick={() => increaseQuantity(item.id)}
-                      style={{
-                        backgroundColor: '#f0f0f0',
-                        color: '#000000',
-                        padding: '4px 8px',
-                        borderRadius: '4px',
-                      }}
-                    >
-                      +
-                    </button>
-                  </div>
-                  <FontAwesomeIcon
-                    icon={faTrash}
-                    className="text-gray-300 hover:text-red-700 cursor-pointer ml-2"
-                    onClick={() => removeItem(item.id)}
-                  />
                 </div>
-              ))}
-            </div>
-
-            <div className="mt-8">
-            <a href="./Cart">
-              <button
-              className='w-full'
-                style={{
-                  backgroundColor: '#000000',
-                  color: '#ffffff',
-                  padding: '10px ',
-                
-                  borderRadius: '0', // Square shape
-                }}
-              >
-                Checkout
-              </button>
-              </a>
-            </div>
+                <button onClick={() => removeItem(item.id)}>
+                  <FontAwesomeIcon icon={faTrash} className="text-red-600" />
+                </button>
+              </div>
+            ))}
           </div>
         </div>
       )}

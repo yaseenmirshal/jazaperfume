@@ -1,10 +1,11 @@
 "use client";
 
 import Sidebar from "./Sidebar";
-import Navbar from "@/app/Components/Navbar";
+// import Navbar from "@/app/Components/Navbar";
 import { useEffect, useState, } from "react";
 import { FaSortAmountDownAlt, FaFilter } from 'react-icons/fa';
 import Link from 'next/link';
+import NavbarStore from "@/app/Components/NavbarStore";
 
 function Page() {
 
@@ -182,6 +183,7 @@ function Page() {
     
       <div className="flex h-screen overflow-hidden">
         {/* Sidebar */}
+        <NavbarStore/>
         <Sidebar/>
         
           {/* Products Section */}

@@ -94,7 +94,7 @@ const SocialIcons = () => {
 
         {/* Oils Card */}
        <div className="flex flex-col rounded-xl w-full bg-[#1e1e1e] text-[#e0e0e0] shadow-md transition-transform duration-500 md:hover:scale-105 hover:object-scale-down mb-8 md:mb-0 md:mt-0">
-  <div style={{backgroundImage: `url('https://as2.ftcdn.net/v2/jpg/05/05/84/01/1000_F_505840152_BmLvYvhhYY9qddSadhyzHfKHHqZrAcsa.jpg')`}} className="rounded-xl mx-4 -mt-6 h-40 bg-[#333333] bg-clip-border text-white shadow-lg bg-cover bg-center"></div>
+  <div style={{backgroundImage: `url('jazaoil.jpeg')`}} className="rounded-xl mx-4 -mt-6 h-40 bg-[#333333] bg-clip-border text-white shadow-lg bg-cover bg-center"></div>
   <div className="p-6">
     <h5 className="mb-2 text-xl font-semibold text-[#d4af37]">
       Oils
