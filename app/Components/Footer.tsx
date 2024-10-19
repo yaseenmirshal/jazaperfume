@@ -8,7 +8,7 @@ function Footer() {
     <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
             <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
-                <img className="w-auto h-16" src="/jazalogo4.png" alt="" />
+                <img className="w-auto h-16" src="/jazalogo-bgremov.png" alt="" />
 
                 <p className="text-base leading-relaxed text-gray-600 mt-7">Jaza Perfumes offers a luxurious collection of premium fragrances, crafted to inspire elegance and sophistication. Discover our unique blends that captivate the senses and leave a lasting impression.</p>
 

@@ -93,56 +93,64 @@ const About = () => {
         </p>
       </motion.div>
 
-          {/* Mission Section */}
-          <div className="mt-16">
-            <h2 className="text-3xl font-semibold text-center text-[#3E2723] mb-4">
-              Our Mission
-            </h2>
-            <p className="text-center text-[#6D6D6D] max-w-3xl mx-auto">
-              At Jaza Perfumes, our mission is to bring the captivating world of Arabian fragrances to the modern perfume lover. We are committed to delivering unparalleled quality, blending authenticity with contemporary elegance, ensuring every fragrance leaves a timeless mark.
-            </p>
-          </div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.3 }}
+        className="mt-16"
+        // data-aos="fade-up"
+        // data-aos-duration="3000"
+      >
+        <h2 className="text-3xl font-semibold text-center text-[#3E2723] mb-4">
+          Our Mission
+        </h2>
+        <p className="text-center text-[#6D6D6D] max-w-3xl mx-auto">
+          At Jaza Perfumes, our mission is to bring the captivating world of Arabian fragrances to the modern perfume lover. We are committed to delivering unparalleled quality, blending authenticity with contemporary elegance, ensuring every fragrance leaves a timeless mark.
+        </p>
+      </motion.div>
 
-          {/* Vision Section */}
-          <div className="mt-16 ">
-            <h2 className="text-3xl font-semibold text-center text-[#3E2723] mb-4 ">
-              Our Vision
+      {/* Vision Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.3 }}
+        className="mt-16 mb-12"
+      >
+        <h2 className="text-3xl font-semibold text-center text-[#3E2723] mb-4">
+          Our Vision
+        </h2>
+        <p className="text-center text-[#6D6D6D] max-w-3xl mx-auto">
+          We aim to be a global leader in luxury perfumes, bridging the gap between the rich traditions of Arabian perfumery and the evolving tastes of perfume enthusiasts around the world.
+        </p>
+      </motion.div>
+
+      {/* Luxury You Can Trust Section */}
+      <div className="bg-gray-100 w-full max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="flex flex-col items-center md:items-start justify-center">
+            <img
+              src="ingre.png"
+              alt="Perfume ingredients"
+              className="w-full max-w-xs h-auto object-cover" // Image will adjust to screen size
+            />
+          </div>
+          <div className="flex w-full md:w-80 flex-col justify-center md:items-start items-center">
+            <h2 className="text-2xl md:text-3xl text-black font-bold mb-4">
+              Luxury You Can Trust
             </h2>
-            <p className="text-center text-[#6D6D6D] max-w-3xl mx-auto">
-              We aim to be a global leader in luxury perfumes, bridging the gap between the rich traditions of Arabian perfumery and the evolving tastes of perfume enthusiasts around the world.
+            <p className="text-base md:text-start text-center md:text-lg text-black mb-4">
+              Our perfumes are designed to provide an unforgettable olfactory experience, made from premium quality ingredients that ensure longevity and richness.
+            </p>
+            <h3 className="text-xl md:text-2xl text-black font-bold mb-4">
+              A Symphony of Scents
+            </h3>
+            <p className="text-base md:text-start text-center md:text-lg text-black">
+              Each perfume is a carefully composed symphony, artfully blending notes to create a unique and captivating fragrance profile.
             </p>
           </div>
         </div>
-
-
-        <div className="container mx-auto py-8 px-4 sm:px-8">
-  <div className="bg-gray-100 w-full max-w-4xl mx-auto">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div className="flex flex-col items-center md:items-start justify-center">
-        <img
-          src="ingre.png"
-          alt="Perfume ingredients"
-          className="w-full max-w-xs h-auto object-cover" // Image will adjust to screen size
-        />
       </div>
-      <div className="flex w-full md:w-80 flex-col justify-center md:items-start items-center">
-        <h2 className="text-2xl md:text-3xl text-black font-bold mb-4">
-          Luxury You Can Trust
-        </h2>
-        <p className="text-base md:text-start text-center md:text-lg text-black mb-4">
-          Our perfumes are designed to provide an unforgettable olfactory experience, made from premium quality ingredients that ensure longevity and richness.
-        </p>
-        <h3 className="text-xl md:text-2xl text-black font-bold mb-4">
-          A Symphony of Scents
-        </h3>
-        <p className="text-base md:text-start text-center md:text-lg text-black">
-          Each perfume is a carefully composed symphony, artfully blending notes to create a unique and captivating fragrance profile.
-        </p>
       </div>
-    </div>
-  </div>
-</div>
-
 
 
       </section>

@@ -67,9 +67,9 @@ const SocialIcons = () => {
         </div>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 w-full min-h-auto bg-darkCharcoal px-4 py-8 md:px-16 md:py-14 bg-[#F7F3E9]">
+      <div  className="grid grid-cols-1 md:grid-cols-3 gap-12 w-full min-h-auto bg-darkCharcoal px-4 py-8 md:px-16 md:py-14 bg-[#F7F3E9]">
         {/* Fragrances Card */}
-          <div className="flex flex-col rounded-xl w-full bg-[#1e1e1e] text-[#e0e0e0] shadow-md transition-transform duration-500 mb-8 mt-10 md:mb-0 md:mt-0 md:hover:scale-105 hover:object-scale-down">
+          <div data-aos="zoom-in-down" className="flex flex-col rounded-xl w-full bg-[#1e1e1e] text-[#e0e0e0] shadow-md transition-transform duration-500 mb-8 mt-10 md:mb-0 md:mt-0 md:hover:scale-105 hover:object-scale-down">
   <div style={{backgroundImage: `url('./jazabottles.jpg')`}} className="rounded-xl mx-4 -mt-6 h-40 bg-[#333333] bg-clip-border text-white shadow-lg bg-gradient-to-r bg-cover bg-center"></div>
   
   <div className="p-6">
@@ -93,7 +93,7 @@ const SocialIcons = () => {
 
 
         {/* Oils Card */}
-       <div className="flex flex-col rounded-xl w-full bg-[#1e1e1e] text-[#e0e0e0] shadow-md transition-transform duration-500 md:hover:scale-105 hover:object-scale-down mb-8 md:mb-0 md:mt-0">
+       <div data-aos="zoom-in-down" className="flex flex-col rounded-xl w-full bg-[#1e1e1e] text-[#e0e0e0] shadow-md transition-transform duration-500 md:hover:scale-105 hover:object-scale-down mb-8 md:mb-0 md:mt-0">
   <div style={{backgroundImage: `url('jazaoil.jpeg')`}} className="rounded-xl mx-4 -mt-6 h-40 bg-[#333333] bg-clip-border text-white shadow-lg bg-cover bg-center"></div>
   <div className="p-6">
     <h5 className="mb-2 text-xl font-semibold text-[#d4af37]">
@@ -111,7 +111,7 @@ const SocialIcons = () => {
 </div>
 
         {/* Gift / Kits Card */}
-        <div className="flex flex-col rounded-xl w-full bg-[#1e1e1e] text-gray-200 shadow-md transition-transform duration-500 md:hover:scale-105 hover:object-scale-down">
+        <div data-aos="zoom-in-down" className="flex flex-col rounded-xl w-full bg-[#1e1e1e] text-gray-200 shadow-md transition-transform duration-500 md:hover:scale-105 hover:object-scale-down">
           <div style={{backgroundImage: `url('https://as2.ftcdn.net/v2/jpg/07/97/30/39/1000_F_797303992_4wWOx7Ar8XM0WAPUIdFe0TiRC3B14De2.jpg')`}} className="rounded-xl mx-4 -mt-6 h-40 bg-blue-gray-500 bg-clip-border text-white shadow-lg bg-cover bg-center"></div>
           <div className="p-6">
             <h5 className="mb-2 text-xl font-semibold text-[#d4af37]">
