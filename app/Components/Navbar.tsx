@@ -80,7 +80,7 @@ const Navbar = () => {
             <div className="hidden md:flex justify-center flex-grow space-x-10 max-h-20">
               <Link href="/" legacyBehavior>
                 <a
-                  className="py-4 px-2 text-ivory border-b-4 border-black font-semibold"
+                  className="py-4 px-2 text-ivory border-black font-semibold"
                   style={{ color: "#000000" }}
                   onClick={() => setIsOpen(false)} // Close the menu
                 >

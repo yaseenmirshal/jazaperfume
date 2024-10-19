@@ -59,116 +59,143 @@ function Page() {
   const products = [
     {
       id: 1,
-      name: "LAVENDER OUD",
+      name: "LAVENDER OUD ",
       image1:
         "https://i.pinimg.com/564x/e6/39/29/e639291e6f24d22a06160618483421ff.jpg",
       image2:
-        "https://i.pinimg.com/564x/d3/df/a1/d3dfa1b0348b8aacb93a7fb9c08aa3da.jpg",
-      price: 449,
-      originalPrice: 699,
+       "./prdctimg/lavendour.png",
+      price: 2650,
+      originalPrice: 3500,
       discount: "39% OFF",
       description:'OUD LAVENDER is a unisex fragrance that exudes sophistication, and is perfect for those that enjoy luxury and indulging in themselves. '
     },
     {
       id: 1,
-      name: "PURE HD",
+      name: "PURE HD (100ml)",
       image1:
         "https://i.pinimg.com/564x/e6/39/29/e639291e6f24d22a06160618483421ff.jpg",
       image2:
-        "https://i.pinimg.com/564x/d3/df/a1/d3dfa1b0348b8aacb93a7fb9c08aa3da.jpg",
-      price: 449,
-      originalPrice: 699,
+       "./prdctimg/jhd.png",
+      price: 4600,
+      originalPrice: 6200,
       discount: "39% OFF",
-      description:'OUD LAVENDER is a unisex fragrance that exudes sophistication, and is perfect for those that enjoy luxury and indulging in themselves. '
+      description:'The heart notes of rose, jasmine, and birch give this cologne a soft, romantic appeal. '
 
     },
     {
       id: 1,
-      name: "YSL KOUROS",
+      name: "KOROUS (100ml)",
       image1:
         "https://i.pinimg.com/564x/e6/39/29/e639291e6f24d22a06160618483421ff.jpg",
       image2:
-        "https://i.pinimg.com/564x/d3/df/a1/d3dfa1b0348b8aacb93a7fb9c08aa3da.jpg",
-      price: 449,
-      originalPrice: 699,
+        "./prdctimg/korus.png",
+      price: 2650,
+      originalPrice: 3500,
       discount: "39% OFF",
-      description:'OUD LAVENDER is a unisex fragrance that exudes sophistication, and is perfect for those that enjoy luxury and indulging in themselves. '
+      description:'A timeless scent of triumphant masculinity, inspired by iconic Greek sculpture of ideal young manhood.'
 
     },
     {
       id: 1,
-      name: "BLACK XS",
+      name: "BLACK XS (100ml)",
       image1:
         "https://i.pinimg.com/564x/e6/39/29/e639291e6f24d22a06160618483421ff.jpg",
       image2:
-        "https://i.pinimg.com/564x/d3/df/a1/d3dfa1b0348b8aacb93a7fb9c08aa3da.jpg",
-      price: 449,
-      originalPrice: 699,
+        "./prdctimg/bombshell.png",
+      price: 2350,
+      originalPrice: 2650,
       discount: "39% OFF",
-      description:'OUD LAVENDER is a unisex fragrance that exudes sophistication, and is perfect for those that enjoy luxury and indulging in themselves. '
+      description:'Black XS for men is a lively and unrestrained fragrance full of wild rock  roll energy.The intense citrussy beginning is like an explosion of freshness.'
 
     },
     {
       id: 1,
-      name: "ACTRESS",
+      name: "ACTRESS (100ml)",
       image1:
         "https://i.pinimg.com/564x/e6/39/29/e639291e6f24d22a06160618483421ff.jpg",
       image2:
-        "https://i.pinimg.com/564x/d3/df/a1/d3dfa1b0348b8aacb93a7fb9c08aa3da.jpg",
-      price: 449,
-      originalPrice: 699,
+        "./prdctimg/actress.png",
+      price: 2050,
+      originalPrice: 2650,
       discount: "39% OFF",
-      description:'OUD LAVENDER is a unisex fragrance that exudes sophistication, and is perfect for those that enjoy luxury and indulging in themselves.'
+      description:'Actress perfume is a fragrance that is described as fresh, spicy, woody, and aromatic. It is a long-lasting perfume spray for women. '
 
     },
     {
       id: 1,
-      name: "PARDA - LEMON",
-      image1:
-        "https://i.pinimg.com/564x/e6/39/29/e639291e6f24d22a06160618483421ff.jpg",
+      name: "CR7 (100ml)",
+     
       image2:
-        "https://i.pinimg.com/564x/d3/df/a1/d3dfa1b0348b8aacb93a7fb9c08aa3da.jpg",
-      price: 449,
-      originalPrice: 699,
+       "./prdctimg/cr7.png",
+      price: 1800,
+      originalPrice: 2400,
       discount: "39% OFF",
-      description:'OUD LAVENDER is a unisex fragrance that exudes sophistication, and is perfect for those that enjoy luxury and indulging in themselves. '
+      description:'Sporty, energetic and modern, CR7 is a fragrance for the spontaneous and on-the-go young man. '
 
     },
     {
       id: 1,
-      name: "PARDA - LEMON",
+      name: "ARMANI (100ml)",
       image1:
         "https://i.pinimg.com/564x/e6/39/29/e639291e6f24d22a06160618483421ff.jpg",
       image2:
-        "https://i.pinimg.com/564x/d3/df/a1/d3dfa1b0348b8aacb93a7fb9c08aa3da.jpg",
-      price: 449,
-      originalPrice: 699,
+        "./prdctimg/lavendour.png",
+      price: 2650,
+      originalPrice: 3500,
       discount: "39% OFF",
-      description:'OUD LAVENDER is a unisex fragrance that exudes sophistication, and is perfect for those that enjoy luxury and indulging in themselves. '
+      description:'Armani created the aroma of Aqua di Gio for men and women. The fragrance for men is a scent of freedom, full of wind and water.'
 
     },
     {
       id: 1,
-      name: "PARDA - LEMON",
+      name: "1 MILLION (100ml)",
       image1:
         "https://i.pinimg.com/564x/e6/39/29/e639291e6f24d22a06160618483421ff.jpg",
       image2:
-        "https://i.pinimg.com/564x/d3/df/a1/d3dfa1b0348b8aacb93a7fb9c08aa3da.jpg",
-      price: 449,
-      originalPrice: 699,
+        "./prdctimg/2.png",
+      price: 2300,
+      originalPrice: 2700,
       discount: "39% OFF",
-      description:'OUD LAVENDER is a unisex fragrance that exudes sophistication, and is perfect for those that enjoy luxury and indulging in themselves. '
+      description:'1 Million by Paco Rabanne can be defined as a woody-spicy perfume, with fresh touches, notes of flowers and juicy fruit.'
 
     },
     {
       id: 1,
-      name: "PARDA - LEMON",
+      name: "BOMBSHELL (100ml)",
       image1:
         "https://i.pinimg.com/564x/e6/39/29/e639291e6f24d22a06160618483421ff.jpg",
       image2:
-        "https://i.pinimg.com/564x/d3/df/a1/d3dfa1b0348b8aacb93a7fb9c08aa3da.jpg",
-      price: 449,
-      originalPrice: 699,
+       "./prdctimg/bombshell.png",
+      price: 2200,
+      originalPrice: 2500,
+      discount: "39% OFF",
+      description:'Bombshell is an Eau de Parfum for women who like to show off their beauty and fragility and also their dominance and dignity.'
+
+     
+    },
+    {
+      id: 1,
+      name: "GUCCI RUSH (100ml)",
+      image1:
+        "https://i.pinimg.com/564x/e6/39/29/e639291e6f24d22a06160618483421ff.jpg",
+      image2:
+      "./prdctimg/gucci.png",
+      price: 1850,
+      originalPrice: 2450,
+      discount: "39% OFF",
+      description:'Gucci RusH includes notes of freesia, gardenia, cardamom, jasmine, rose, peach, patchouli, vetiver, musks and vanilla.'
+
+     
+    },
+    {
+      id: 1,
+      name: "LAVENDOUR ATTAR",
+      image1:
+        "https://i.pinimg.com/564x/e6/39/29/e639291e6f24d22a06160618483421ff.jpg",
+      image2:
+      "./prdctimg/lavendourattar.png",
+      price: 350,
+      originalPrice: 400,
       discount: "39% OFF",
       description:'OUD LAVENDER is a unisex fragrance that exudes sophistication, and is perfect for those that enjoy luxury and indulging in themselves. '
 
@@ -190,7 +217,7 @@ function Page() {
           <div className="flex-1 bg-gray-100 p-4 pt-28 overflow-auto">
       <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 md:p-4">
         {products.map((product) => (
-          <Link href="/ProductView" key={product.id} legacyBehavior>
+          <Link href="http://wa.me/9207234999" key={product.id} legacyBehavior>
             <a className="block">
               <div
                 className="relative flex flex-col overflow-hidden border border-gray-200 bg-white shadow-md transition-transform transform hover:scale-105 hover:shadow-lg cursor-pointer"
@@ -198,11 +225,11 @@ function Page() {
                 {/* Image Section */}
                 <div className="relative w-full h-48 md:h-60 overflow-hidden">
                   <div className="absolute inset-0 transition-transform duration-300 ease-in-out transform group-hover:rotate-y-180">
-                    <img
+                    {/* <img
                       className="w-full h-full object-cover"
                       src={product.image1}
                       alt={product.name}
-                    />
+                    /> */}
                   </div>
                   <div className="absolute inset-0 transition-transform duration-300 ease-in-out transform rotate-y-180 group-hover:rotate-y-0">
                     <img
@@ -213,26 +240,28 @@ function Page() {
                   </div>
                 </div>
 
-                {/* Product Details */}
-                <div className="p-2 md:p-4 flex flex-col justify-between h-full">
-                  <div>
-                    <h5 className="text-sm md:text-lg font-semibold text-gray-800">{product.name}</h5>
-                    <p className="mt-1 md:mt-2 mb-2 md:mb-4 text-xs md:text-sm text-gray-600">
-                      {product.description}
-                    </p>
-                    <div className="flex items-center justify-between">
-                      <p className="text-sm md:text-2xl font-bold text-gray-800">
-                        ₹{product.price}
-                        <span className="text-xs md:text-sm text-gray-500 line-through ml-2">
-                          ₹{product.originalPrice}
-                        </span>
-                      </p>
-                      {/* <span className="bg-blue-600 text-white text-xs md:text-sm px-2 py-1 rounded-full">
-                        {product.discount}
-                      </span> */}
-                    </div>
-                  </div>
-                </div>
+{/* Product Details */}
+<div className="p-2 md:p-4 flex flex-col justify-between h-full">
+  <div className="h-34 md:h-34 w-full">
+    <h5 className="text-sm md:text-lg font-semibold text-gray-800">{product.name}</h5>
+    <p className="mt-1 md:mt-2 mb-2 md:mb-4 text-xs md:text-sm text-gray-600 h-16 overflow-y-scroll">
+      {product.description}
+    </p>
+    <div className="flex items-center justify-between">
+      <p className="text-sm md:text-2xl font-bold text-gray-800">
+        ₹{product.price}
+        <span className="text-xs md:text-sm text-gray-500 line-through ml-2">
+          ₹{product.originalPrice}
+        </span>
+      </p>
+      {/* <span className="bg-blue-600 text-white text-xs md:text-sm px-2 py-1 rounded-full">
+        {product.discount}
+      </span> */}
+    </div>
+  </div>
+</div>
+
+
               </div>
             </a>
           </Link>
