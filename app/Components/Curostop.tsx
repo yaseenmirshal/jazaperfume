@@ -18,33 +18,21 @@ const Carousel = () => {
 
   return (
     <>
-    <div className='block lg:hidden w-full h-auto md:h-80 justify-center p-0 bg-white'>
-      <div className="relative w-full h-auto overflow-hidden ">
-        <div
-          className="flex transition-transform duration-1000 ease-in-out"
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-        >
-          {images.map((image, index) => (
-            <div
-              key={index}
-              className="w-full h-auto mt-[80px] flex items-center justify-center flex-shrink-0"
-            >
-              <img
-                src={image}
-                alt={`Slide ${index + 1}`}
-                className="max-w-full max-h-full object-contain"
-              />
-            </div>
-          ))}
-        </div>
-       
+      <div className='block lg:hidden mt-20 w-full h-44 relative overflow-hidden'>
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute  bg-slate-500 inset-0 flex items-center justify-center transition-opacity duration-1000 ease-in-out`}
+            style={{ opacity: currentIndex === index ? 1 : 0 }} // Change to 1 for debugging
+          >
+            <img
+              src={image}
+              alt={`Slide ${index + 1}`}
+              className="w-full h-auto" // Ensure the image covers the entire space
+            />
+          </div>
+        ))}
       </div>
-    </div>
-
-    <div>
-
-
-    </div>
     </>
   );
 };
