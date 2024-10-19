@@ -125,7 +125,7 @@ const About = () => {
       </motion.div>
 
       {/* Luxury You Can Trust Section */}
-      <div className="bg-gray-100 w-full max-w-4xl mx-auto">
+      <div className=" w-full max-w-4xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex flex-col items-center md:items-start justify-center">
             <img

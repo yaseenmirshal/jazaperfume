@@ -132,7 +132,7 @@ const Contactco = () => {
             {error && <p className="text-red-500">{error}</p>}
             {success && <p className="text-green-500">{success}</p>}
             <form onSubmit={handleSubmit} className="space-y-8">
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 pt-5 md:pt-0">
                 <input
                   type="text"
                   name="name"
