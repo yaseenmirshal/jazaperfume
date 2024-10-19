@@ -176,7 +176,7 @@ const SocialIcons = () => {
     {/* Men Card */}
     <div
       className="relative border-none flex w-full md:w-1/2 h-96 hover:cursor-pointer rounded-lg bg-white  shadow-lg transition-shadow hover:shadow-2xl"
-      data-aos="fade-right"
+      data-aos="zoom-in"
     >
       <div className="relative w-full h-full overflow-hidden ">
         <div
@@ -192,7 +192,7 @@ const SocialIcons = () => {
     {/* Women Card */}
     <div
       className="relative border-none flex w-full md:w-1/2 h-96 hover:cursor-pointer rounded-lg bg-white  shadow-lg transition-shadow hover:shadow-2xl"
-      data-aos="fade-left"
+      data-aos="zoom-in"
     >
       <div className="relative w-full h-full overflow-hidden">
         <div
