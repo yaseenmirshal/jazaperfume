@@ -71,6 +71,46 @@ function Page() {
     },
     {
       id: 1,
+      name: "BLACK XS (100ml)",
+      image1:
+        "https://i.pinimg.com/564x/e6/39/29/e639291e6f24d22a06160618483421ff.jpg",
+      image2:
+        "./prdctimg/bombshell.png",
+      price: 2350,
+      originalPrice: 2650,
+      discount: "39% OFF",
+      description:'Black XS for men is a lively and unrestrained fragrance full of wild rock  roll energy.The intense citrussy beginning is like an explosion of freshness.'
+
+    },
+    {
+      id: 1,
+      name: "GUCCI RUSH (100ml)",
+      image1:
+        "https://i.pinimg.com/564x/e6/39/29/e639291e6f24d22a06160618483421ff.jpg",
+      image2:
+      "./prdctimg/gucci.png",
+      price: 1850,
+      originalPrice: 2450,
+      discount: "39% OFF",
+      description:'Gucci RusH includes notes of freesia, gardenia, cardamom, jasmine, rose, peach, patchouli, vetiver, musks and vanilla.'
+
+     
+    },
+    {
+      id: 1,
+      name: "ACTRESS (100ml)",
+      image1:
+        "https://i.pinimg.com/564x/e6/39/29/e639291e6f24d22a06160618483421ff.jpg",
+      image2:
+        "./prdctimg/actress.png",
+      price: 2050,
+      originalPrice: 2650,
+      discount: "39% OFF",
+      description:'Actress perfume is a fragrance that is described as fresh, spicy, woody, and aromatic. It is a long-lasting perfume spray for women. '
+
+    },
+    {
+      id: 1,
       name: "PURE HD (100ml)",
       image1:
         "https://i.pinimg.com/564x/e6/39/29/e639291e6f24d22a06160618483421ff.jpg",
@@ -95,32 +135,8 @@ function Page() {
       description:'A timeless scent of triumphant masculinity, inspired by iconic Greek sculpture of ideal young manhood.'
 
     },
-    {
-      id: 1,
-      name: "BLACK XS (100ml)",
-      image1:
-        "https://i.pinimg.com/564x/e6/39/29/e639291e6f24d22a06160618483421ff.jpg",
-      image2:
-        "./prdctimg/bombshell.png",
-      price: 2350,
-      originalPrice: 2650,
-      discount: "39% OFF",
-      description:'Black XS for men is a lively and unrestrained fragrance full of wild rock  roll energy.The intense citrussy beginning is like an explosion of freshness.'
-
-    },
-    {
-      id: 1,
-      name: "ACTRESS (100ml)",
-      image1:
-        "https://i.pinimg.com/564x/e6/39/29/e639291e6f24d22a06160618483421ff.jpg",
-      image2:
-        "./prdctimg/actress.png",
-      price: 2050,
-      originalPrice: 2650,
-      discount: "39% OFF",
-      description:'Actress perfume is a fragrance that is described as fresh, spicy, woody, and aromatic. It is a long-lasting perfume spray for women. '
-
-    },
+   
+    
     {
       id: 1,
       name: "CR7 (100ml)",
@@ -173,20 +189,7 @@ function Page() {
 
      
     },
-    {
-      id: 1,
-      name: "GUCCI RUSH (100ml)",
-      image1:
-        "https://i.pinimg.com/564x/e6/39/29/e639291e6f24d22a06160618483421ff.jpg",
-      image2:
-      "./prdctimg/gucci.png",
-      price: 1850,
-      originalPrice: 2450,
-      discount: "39% OFF",
-      description:'Gucci RusH includes notes of freesia, gardenia, cardamom, jasmine, rose, peach, patchouli, vetiver, musks and vanilla.'
-
-     
-    },
+    
     {
       id: 1,
       name: "LAVENDOUR ATTAR",
@@ -220,7 +223,7 @@ function Page() {
           <Link href="http://wa.me/9207234999" key={product.id} legacyBehavior>
             <a className="block">
               <div
-                className="relative flex flex-col overflow-hidden border border-gray-200 bg-white shadow-md transition-transform transform hover:scale-105 hover:shadow-lg cursor-pointer"
+                className="relative flex flex-col overflow-hidden border border-gray-200 bg-white shadow-md transition-transform transform md:hover:scale-105 md:hover:shadow-lg cursor-pointer"
               >
                 {/* Image Section */}
                 <div className="relative w-full h-48 md:h-60 overflow-hidden">
