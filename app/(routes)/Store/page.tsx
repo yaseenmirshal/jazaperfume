@@ -201,9 +201,73 @@ function Page() {
       originalPrice: 400,
       discount: "39% OFF",
       description:'OUD LAVENDER is a unisex fragrance that exudes sophistication, and is perfect for those that enjoy luxury and indulging in themselves. '
-
-     
     },
+
+    {
+      id: 1,
+      name: "Imperial-Blue",
+      image1:
+        "https://i.pinimg.com/564x/e6/39/29/e639291e6f24d22a06160618483421ff.jpg",
+      image2:
+      "https://www.anabis.com/images/products/Riiffs-Imperial-Blue-EdP-100ml.png",
+      price: 999,
+      originalPrice:1300,
+      discount: "39% OFF",
+      description:'Top notes are Lemon, Apple and Mint; middle notes are Geranium, Vetiver and Moss; base notes are Vanilla, Cedar and Tonka'
+    },
+
+    {
+      id: 1,
+      name: "Nusuk Ana Assali",
+      image1:
+        "https://i.pinimg.com/564x/e6/39/29/e639291e6f24d22a06160618483421ff.jpg",
+      image2:
+      "https://duomoperfumes.cl/cdn/shop/files/H75A0058.jpg?v=1727652751",
+      price: 900,
+      originalPrice: 1400,
+      discount: "39% OFF",
+      description:'Ana Assali is a stunning perfumed water that is perfect all year round. It is embedded in a solid combination of flowers.'
+    },
+
+    {
+      id: 1,
+      name: "Cafe Noir",
+      image1:
+        "https://i.pinimg.com/564x/e6/39/29/e639291e6f24d22a06160618483421ff.jpg",
+      image2:
+      "https://belvish.com/cdn/shop/files/download_70_1_1_1_1_1.png?crop=center&height=2048&v=1721459064&width=2048.jpg",
+      price: 1250,
+      originalPrice: 1400,
+      discount: "39% OFF",
+      description:'Cafe Noir is the trail blazing ambery gourmand fragrance that harmonizes spice, floral, resin and wood notes with the beloved aroma of black coffee.'
+    },
+
+    {
+      id: 1,
+      name: "Blu O2",
+      image1:
+        "https://i.pinimg.com/564x/e6/39/29/e639291e6f24d22a06160618483421ff.jpg",
+      image2:
+      "https://5.imimg.com/data5/SELLER/Default/2023/1/BA/RY/SL/57796796/riiffs-bluo2-perfume-500x500.jpg",
+      price: 1250,
+      originalPrice: 1400,
+      discount: "39% OFF",
+      description:'A sophisticated and enchanting fragrance that captivates with its unique blend of aromas. '
+    },
+
+    {
+      id: 1,
+      name: "Our For Greatness",
+      image1:
+        "https://i.pinimg.com/564x/e6/39/29/e639291e6f24d22a06160618483421ff.jpg",
+      image2:
+      "https://www.worldofwatches.com/media/catalog/product/cache/014bff4b317b6a2547a3bcf7a43e8ec6/i/n/initio-parfums-prives-oud-for-greatness-eau-de-parfum-spray-3-oz-90ml-z-495u7_1.jpg",
+      price: 1250,
+      originalPrice: 1400,
+      discount: "39% OFF",
+      description:'A profound woody essence, an enchanting fragrance that evokes timeless sophistication and a sense of unparalleled allure to elevate your senses. '
+    },
+    
     // Your products data...
   ];
   return (
