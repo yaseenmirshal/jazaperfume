@@ -36,31 +36,38 @@ useEffect(() => {
 const perfumes = [
   {
     id: 1,
-    name: "Al Hoob",
-    price: "₹4450",
+    name: "Areej Al Oud",
+    price: "₹1250",
     category: "Category 1",
-    image: "https://i.pinimg.com/564x/79/50/35/795035d20d005c82ad4c44c570f989e9.jpg",
+    image: "https://i.pinimg.com/736x/d0/1a/16/d01a16e0b94fd57065f75e465533e6ae.jpg",
   },
   {
     id: 2,
-    name: "Suavage",
-    price: "₹5660",
+    name: "Imperial Blue",
+    price: "₹1300",
     category: "Category 2",
-    image: "https://i.pinimg.com/736x/b3/85/88/b3858859812605215ecb2d0a06d75e81.jpg",
+    image: "https://www.aarfragrances.com/public/uploads/all/rTCtx5Yk5yb9CzDPwlI50OurncSxizWsA7utKXHX.jpg",
   },
   {
     id: 3,
+    name: "khalat Al Dhahabi",
+    price: "₹2360",
+    category: "Category 2",
+    image: "https://i.pinimg.com/736x/9f/36/81/9f36812779154c642d7510fb53608a46.jpg",
+  },
+  {
+    id: 4,
     name: "Kourus",
     price: "₹2360",
     category: "Category 2",
     image: "https://i.pinimg.com/564x/41/b2/ae/41b2aee8f41704191c5beeb167ea82a3.jpg",
   },
   {
-    id: 4,
+    id: 5,
     name: "oud greatness",
-    price: "₹3360",
+    price: "₹1999",
     category: "Category 2",
-    image: "https://i.pinimg.com/564x/27/c3/66/27c3669fc93e11253a515f7657419847.jpg",
+    image: "https://media.neimanmarcus.com/f_auto,q_auto:low,ar_4:5,c_fill,dpr_2.0,w_790/01/nm_2877630_100000_b.jpg",
   },
   // Add more perfume objects as needed
 ];
@@ -103,7 +110,7 @@ const perfumes = [
           <div className="bg-[#1e1e1e] rounded-xl overflow-hidden">
             <div
               style={{ backgroundImage: `url(${perfume.image})` }}
-              className="bg-cover bg-center h-60"
+              className="bg-cover bg-center h-72"
             ></div>
             <div className="p-6">
               <h5 className="text-xl font-semibold text-[#DAA520]">{perfume.name}</h5>

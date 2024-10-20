@@ -12,10 +12,10 @@ const Contactco = () => {
   });
 
   const images = [
-    '/redbo.jpeg',
-    '/rose.jpeg',
-    '/luxury.jpeg',
-    '/gold.jpeg',
+    'https://static.wixstatic.com/media/7f2039_df679848359c402baed7265b8b9f48ad~mv2.jpg/v1/fill/w_520,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/7f2039_df679848359c402baed7265b8b9f48ad~mv2.jpg',
+    'https://i.pinimg.com/736x/95/82/c2/9582c291401ff4688fe5e38359dbc9b5.jpg',
+    './cafe.jpg',
+    'https://i.pinimg.com/736x/2a/69/e3/2a69e38a2a5e83780e83a93c16e3ec11.jpg',
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);

@@ -180,7 +180,7 @@ const SocialIcons = () => {
     >
       <div className="relative w-full h-full overflow-hidden ">
         <div
-          style={{ backgroundImage: `url('https://i.pinimg.com/736x/2f/da/4b/2fda4bb2f061b21b541d5bcd2304ce62.jpg')` }}
+          style={{ backgroundImage: `url('https://i.pinimg.com/originals/5a/67/01/5a67017af75ad83e8708ca2a56066f8a.jpg')` }}
           className="w-full h-full bg-cover bg-center transform transition-transform duration-500 hover:scale-110 rounded-lg"
         ></div>
       </div>
@@ -196,7 +196,7 @@ const SocialIcons = () => {
     >
       <div className="relative w-full h-full overflow-hidden">
         <div
-          style={{ backgroundImage: `url('https://perfumania.com/cdn/shop/articles/Best_Versace_Perfumes_for_Women_in_2024.webp?v=1715884495')` }}
+          style={{ backgroundImage: `url('womens.jpg')` }}
           className="w-full h-full bg-cover bg-center transform transition-transform duration-500 hover:scale-110 rounded-lg"
         ></div>
       </div>
