@@ -22,7 +22,7 @@ const Carousel = () => {
         {images.map((image, index) => (
           <div
             key={index}
-            className={`absolute  bg-slate-500 inset-0 flex items-center justify-center transition-opacity duration-1000 ease-in-out`}
+            className={`absolute  inset-0 flex items-center justify-center transition-opacity duration-1000 ease-in-out`}
             style={{ opacity: currentIndex === index ? 1 : 0 }} // Change to 1 for debugging
           >
             <img

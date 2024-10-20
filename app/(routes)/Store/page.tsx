@@ -257,7 +257,7 @@ function Page() {
 
     {
       id: 1,
-      name: "Our For Greatness",
+      name: "Oud For Greatness",
       image1:
         "https://i.pinimg.com/564x/e6/39/29/e639291e6f24d22a06160618483421ff.jpg",
       image2:
