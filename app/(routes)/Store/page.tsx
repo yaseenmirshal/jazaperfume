@@ -273,7 +273,6 @@ function Page() {
   return (
     <>
 
-
     
       <div className="flex h-screen overflow-hidden">
         {/* Sidebar */}
@@ -284,7 +283,7 @@ function Page() {
           <div className="flex-1 bg-gray-100 p-4 pt-28 overflow-auto">
       <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 md:p-4">
         {products.map((product) => (
-          <Link href="http://wa.me/9207234999" key={product.id} legacyBehavior>
+          <Link href="http://wa.me/+919207234999" key={product.id} legacyBehavior>
             <a className="block">
               <div
                 className="relative flex flex-col overflow-hidden border border-gray-200 bg-white shadow-md transition-transform transform md:hover:scale-105 md:hover:shadow-lg cursor-pointer"
